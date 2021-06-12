@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QAbstractItemModel, QFile, QIODevice, QModelIndex, Qt
-from PyQt5.QtWidgets import QApplication, QTreeView
+from PyQt6.QtCore import QAbstractItemModel, QFile, QIODevice, QModelIndex, Qt
+from PyQt6.QtWidgets import QApplication, QTreeView
 
 import simpletreemodel_rc
 
@@ -209,4 +209,4 @@ if __name__ == '__main__':
     view.setModel(model)
     view.setWindowTitle("Simple Tree Model")
     view.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

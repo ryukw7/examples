@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QTime, QTimer
-from PyQt5.QtWidgets import QApplication, QLCDNumber
+from PyQt6.QtCore import QTime, QTimer
+from PyQt6.QtWidgets import QApplication, QLCDNumber
 
 
 class DigitalClock(QLCDNumber):
@@ -77,4 +77,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     clock = DigitalClock()
     clock.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

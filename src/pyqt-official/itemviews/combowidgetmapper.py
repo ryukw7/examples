@@ -43,9 +43,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QStringListModel
-from PyQt5.QtGui import QStandardItem, QStandardItemModel
-from PyQt5.QtWidgets import (QApplication, QComboBox, QDataWidgetMapper,
+from PyQt6.QtCore import QStringListModel
+from PyQt6.QtGui import QStandardItem, QStandardItemModel
+from PyQt6.QtWidgets import (QApplication, QComboBox, QDataWidgetMapper,
         QGridLayout, QLabel, QLineEdit, QPushButton, QTextEdit, QWidget)
 
 
@@ -132,4 +132,4 @@ if __name__ == '__main__':
     window = Window()
     window.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QBasicTimer
-from PyQt5.QtGui import QColor, QFontMetrics, QPainter, QPalette
-from PyQt5.QtWidgets import (QApplication, QDialog, QLineEdit, QVBoxLayout,
+from PyQt6.QtCore import QBasicTimer
+from PyQt6.QtGui import QColor, QFontMetrics, QPainter, QPalette
+from PyQt6.QtWidgets import (QApplication, QDialog, QLineEdit, QVBoxLayout,
         QWidget)
 
 
@@ -120,4 +120,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     dialog = Dialog()
     dialog.show();
-    sys.exit(app.exec_())    
+    sys.exit(app.exec())

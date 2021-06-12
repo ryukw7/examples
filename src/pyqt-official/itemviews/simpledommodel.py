@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QAbstractItemModel, QFile, QIODevice, QModelIndex, Qt
-from PyQt5.QtWidgets import QApplication, QFileDialog, QMainWindow, QTreeView
-from PyQt5.QtXml import QDomDocument
+from PyQt6.QtCore import QAbstractItemModel, QFile, QIODevice, QModelIndex, Qt
+from PyQt6.QtWidgets import QApplication, QFileDialog, QMainWindow, QTreeView
+from PyQt6.QtXml import QDomDocument
 
 
 class DomItem(object):
@@ -221,4 +221,4 @@ if __name__ == '__main__':
     window = MainWindow()
     window.resize(640, 480)
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

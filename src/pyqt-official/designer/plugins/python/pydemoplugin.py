@@ -3,8 +3,8 @@
 # Copyright (c) 2013 Riverbank Computing Limited
 
 
-from PyQt5.QtGui import QIcon, QPixmap
-from PyQt5.QtDesigner import QPyDesignerCustomWidgetPlugin
+from PyQt6.QtGui import QIcon, QPixmap
+from PyQt6.QtDesigner import QPyDesignerCustomWidgetPlugin
 
 from pydemo import PyDemo
 

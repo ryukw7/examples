@@ -43,8 +43,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QEventLoop, QTime
-from PyQt5.QtWidgets import QApplication, QMessageBox
+from PyQt6.QtCore import QEventLoop, QTime
+from PyQt6.QtWidgets import QApplication, QMessageBox
 
 from colors import Colors
 from mainwindow import MainWindow
@@ -86,4 +86,4 @@ if __name__ == '__main__':
     artisticSleep(500)
     mainWindow.start()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

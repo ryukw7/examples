@@ -3,11 +3,11 @@
 # Form implementation generated from reading ui file 'window.ui'
 #
 # Created: Tue May 14 22:42:29 2013
-#      by: PyQt5 UI code generator 5.0-snapshot-3507ed3a4178
+#      by: PyQt6 UI code generator 5.0-snapshot-3507ed3a4178
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 class Ui_Window(object):
     def setupUi(self, Window):
@@ -47,4 +47,4 @@ class Ui_Window(object):
         self.elementLineEdit.setText(_translate("Window", "li a"))
         self.highlightButton.setText(_translate("Window", "&Highlight"))
 
-from PyQt5 import QtWebKitWidgets
+from PyQt6 import QtWebKitWidgets

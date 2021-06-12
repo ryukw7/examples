@@ -45,10 +45,10 @@
 import sys
 import math
 
-from PyQt5.QtCore import QPointF, QRect, QRectF, Qt, QTimer
-from PyQt5.QtGui import (QBrush, QColor, QFont, QLinearGradient, QPainter,
+from PyQt6.QtCore import QPointF, QRect, QRectF, Qt, QTimer
+from PyQt6.QtGui import (QBrush, QColor, QFont, QLinearGradient, QPainter,
         QPen, QSurfaceFormat)
-from PyQt5.QtWidgets import (QApplication, QGridLayout, QLabel, QOpenGLWidget,
+from PyQt6.QtWidgets import (QApplication, QGridLayout, QLabel, QOpenGLWidget,
         QWidget)
 
 
@@ -169,4 +169,4 @@ if __name__ == '__main__':
 
     window = Window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

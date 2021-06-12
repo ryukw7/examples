@@ -44,11 +44,11 @@
 
 import math
 
-from PyQt5.QtCore import (pyqtSignal, QLineF, QPointF, QRect, QRectF, QSize,
+from PyQt6.QtCore import (pyqtSignal, QLineF, QPointF, QRect, QRectF, QSize,
         QSizeF, Qt)
-from PyQt5.QtGui import (QBrush, QColor, QFont, QIcon, QIntValidator, QPainter,
+from PyQt6.QtGui import (QBrush, QColor, QFont, QIcon, QIntValidator, QPainter,
         QPainterPath, QPen, QPixmap, QPolygonF)
-from PyQt5.QtWidgets import (QAction, QApplication, QButtonGroup, QComboBox,
+from PyQt6.QtWidgets import (QAction, QApplication, QButtonGroup, QComboBox,
         QFontComboBox, QGraphicsItem, QGraphicsLineItem, QGraphicsPolygonItem,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView, QGridLayout,
         QHBoxLayout, QLabel, QMainWindow, QMenu, QMessageBox, QSizePolicy,
@@ -241,7 +241,7 @@ class DiagramItem(QGraphicsPolygonItem):
     def contextMenuEvent(self, event):
         self.scene().clearSelection()
         self.setSelected(True)
-        self.myContextMenu.exec_(event.screenPos())
+        self.myContextMenu.exec(event.screenPos())
 
     def itemChange(self, change, value):
         if change == QGraphicsItem.ItemPositionChange:
@@ -829,4 +829,4 @@ if __name__ == '__main__':
     mainWindow.setGeometry(100, 100, 800, 500)
     mainWindow.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

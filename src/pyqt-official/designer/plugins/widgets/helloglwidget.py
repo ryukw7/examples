@@ -25,9 +25,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 import math
 
-from PyQt5.QtCore import pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize, Qt
-from PyQt5.QtGui import QColor
-from PyQt5.QtWidgets import QApplication, QOpenGLWidget
+from PyQt6.QtCore import pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize, Qt
+from PyQt6.QtGui import QColor
+from PyQt6.QtWidgets import QApplication, QOpenGLWidget
 
 
 class HelloGLWidget(QOpenGLWidget):
@@ -258,4 +258,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     widget = HelloGLWidget()
     widget.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -1,2 +1,2 @@
 module Charts
-plugin pyqt5qmlplugin
+plugin PyQt6qmlplugin

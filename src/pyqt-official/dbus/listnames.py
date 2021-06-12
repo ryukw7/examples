@@ -44,8 +44,8 @@
 
 import sys
 
-from PyQt5.QtCore import QCoreApplication
-from PyQt5.QtDBus import QDBusConnection, QDBusInterface
+from PyQt6.QtCore import QCoreApplication
+from PyQt6.QtDBus import QDBusConnection, QDBusInterface
 
 
 def method1():

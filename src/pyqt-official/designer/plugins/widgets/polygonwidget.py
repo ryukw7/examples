@@ -25,9 +25,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 import math
 
-from PyQt5.QtCore import pyqtProperty, pyqtSlot, QPointF, QSize
-from PyQt5.QtGui import QBrush, QColor, QPainter, QPainterPath, QRadialGradient
-from PyQt5.QtWidgets import QApplication, QWidget
+from PyQt6.QtCore import pyqtProperty, pyqtSlot, QPointF, QSize
+from PyQt6.QtGui import QBrush, QColor, QPainter, QPainterPath, QRadialGradient
+from PyQt6.QtWidgets import QApplication, QWidget
 
 
 class PolygonWidget(QWidget):
@@ -189,4 +189,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = PolygonWidget()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

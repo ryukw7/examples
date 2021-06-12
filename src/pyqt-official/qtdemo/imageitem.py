@@ -40,8 +40,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QPoint
-from PyQt5.QtGui import QColor, QImage, QLinearGradient, QPainter
+from PyQt6.QtCore import QPoint
+from PyQt6.QtGui import QColor, QImage, QLinearGradient, QPainter
 
 from colors import Colors
 from demoitem import DemoItem

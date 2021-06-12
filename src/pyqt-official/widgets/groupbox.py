@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QGridLayout, QGroupBox,
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QGridLayout, QGroupBox,
         QMenu, QPushButton, QRadioButton, QVBoxLayout, QWidget)
 
 
@@ -166,4 +166,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     clock = Window()
     clock.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

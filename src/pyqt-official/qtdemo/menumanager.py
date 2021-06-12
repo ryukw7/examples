@@ -43,10 +43,10 @@
 import sys
 from xml.dom.minidom import parseString
 
-from PyQt5.QtCore import (QByteArray, QDir, QEasingCurve, QFile, QFileInfo,
+from PyQt6.QtCore import (QByteArray, QDir, QEasingCurve, QFile, QFileInfo,
         QLibraryInfo, QObject, QPointF, QProcess, QProcessEnvironment,
         QStandardPaths, Qt, QT_VERSION, QT_VERSION_STR, QTextStream, QUrl)
-from PyQt5.QtWidgets import QApplication, QMessageBox
+from PyQt6.QtWidgets import QApplication, QMessageBox
 
 from colors import Colors
 from demoitemanimation import DemoItemAnimation

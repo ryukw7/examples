@@ -42,11 +42,11 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QByteArray, QFile, QRegExp, Qt
-from PyQt5.QtGui import (QColor, QFont, QSyntaxHighlighter, QTextCharFormat,
+from PyQt6.QtCore import QByteArray, QFile, QRegExp, Qt
+from PyQt6.QtGui import (QColor, QFont, QSyntaxHighlighter, QTextCharFormat,
         QTextCursor, QTextFormat)
-from PyQt5.QtWidgets import QApplication, QMainWindow, QTextEdit
-from PyQt5.QtXmlPatterns import (QAbstractMessageHandler, QSourceLocation,
+from PyQt6.QtWidgets import QApplication, QMainWindow, QTextEdit
+from PyQt6.QtXmlPatterns import (QAbstractMessageHandler, QSourceLocation,
         QXmlSchema, QXmlSchemaValidator)
 
 import schema_rc
@@ -272,4 +272,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

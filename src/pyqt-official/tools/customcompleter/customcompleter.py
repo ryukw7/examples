@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QFile, QStringListModel, Qt
-from PyQt5.QtGui import QCursor, QKeySequence, QTextCursor
-from PyQt5.QtWidgets import (QAction, QApplication, QCompleter, QMainWindow,
+from PyQt6.QtCore import QFile, QStringListModel, Qt
+from PyQt6.QtGui import QCursor, QKeySequence, QTextCursor
+from PyQt6.QtWidgets import (QAction, QApplication, QCompleter, QMainWindow,
         QMessageBox, QTextEdit)
 
 import customcompleter_rc
@@ -203,4 +203,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

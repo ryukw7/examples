@@ -45,7 +45,7 @@
 import sys
 import random
 
-from PyQt5.QtCore import QCoreApplication, QSemaphore, QThread
+from PyQt6.QtCore import QCoreApplication, QSemaphore, QThread
 
 
 DataSize = 100000

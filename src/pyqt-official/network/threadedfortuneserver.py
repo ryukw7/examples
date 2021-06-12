@@ -44,11 +44,11 @@
 
 import random
 
-from PyQt5.QtCore import (pyqtSignal, QByteArray, QDataStream, QIODevice,
+from PyQt6.QtCore import (pyqtSignal, QByteArray, QDataStream, QIODevice,
         QThread)
-from PyQt5.QtWidgets import (QApplication, QDialog, QHBoxLayout, QLabel,
+from PyQt6.QtWidgets import (QApplication, QDialog, QHBoxLayout, QLabel,
         QMessageBox, QPushButton, QVBoxLayout)
-from PyQt5.QtNetwork import (QHostAddress, QNetworkInterface, QTcpServer,
+from PyQt6.QtNetwork import (QHostAddress, QNetworkInterface, QTcpServer,
         QTcpSocket)
 
 
@@ -148,4 +148,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     dialog = Dialog()
     dialog.show()
-    sys.exit(dialog.exec_())
+    sys.exit(dialog.exec())

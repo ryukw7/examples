@@ -40,9 +40,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QRectF
-from PyQt5.QtGui import QColor, QImage, QPainter
-from PyQt5.QtWidgets import QGraphicsTextItem, QStyleOptionGraphicsItem
+from PyQt6.QtCore import QRectF
+from PyQt6.QtGui import QColor, QImage, QPainter
+from PyQt6.QtWidgets import QGraphicsTextItem, QStyleOptionGraphicsItem
 
 from demoitem import DemoItem
 

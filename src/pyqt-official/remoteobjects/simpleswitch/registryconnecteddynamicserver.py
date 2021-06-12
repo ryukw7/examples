@@ -53,9 +53,9 @@
 
 import sys
 
-from PyQt5.QtCore import (pyqtProperty, pyqtSignal, pyqtSlot, QCoreApplication,
+from PyQt6.QtCore import (pyqtProperty, pyqtSignal, pyqtSlot, QCoreApplication,
         QObject, QTimer, QUrl)
-from PyQt5.QtRemoteObjects import QRemoteObjectHost, QRemoteObjectRegistryHost
+from PyQt6.QtRemoteObjects import QRemoteObjectHost, QRemoteObjectRegistryHost
 
 
 class SimpleSwitch(QObject):
@@ -132,4 +132,4 @@ if __name__ == '__main__':
     # Enable remoting.
     srcNode.enableRemoting(srcSwitch, 'SimpleSwitch')
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

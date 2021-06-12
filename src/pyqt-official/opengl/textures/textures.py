@@ -44,11 +44,11 @@
 
 import sys
 
-from PyQt5.QtCore import pyqtSignal, QFileInfo, QPoint, QSize, Qt, QTimer
-from PyQt5.QtGui import (QColor, QImage, QMatrix4x4, QOpenGLShader,
+from PyQt6.QtCore import pyqtSignal, QFileInfo, QPoint, QSize, Qt, QTimer
+from PyQt6.QtGui import (QColor, QImage, QMatrix4x4, QOpenGLShader,
         QOpenGLShaderProgram, QOpenGLTexture, QOpenGLVersionProfile,
         QSurfaceFormat)
-from PyQt5.QtWidgets import QApplication, QGridLayout, QOpenGLWidget, QWidget
+from PyQt6.QtWidgets import QApplication, QGridLayout, QOpenGLWidget, QWidget
 
 
 class GLWidget(QOpenGLWidget):
@@ -269,4 +269,4 @@ if __name__ == '__main__':
 
     window = Window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

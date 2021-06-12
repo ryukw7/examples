@@ -42,7 +42,7 @@
 #############################################################################
 
 
-from PyQt5.QtWidgets import (QApplication, QComboBox, QDialog,
+from PyQt6.QtWidgets import (QApplication, QComboBox, QDialog,
         QDialogButtonBox, QFormLayout, QGridLayout, QGroupBox, QHBoxLayout,
         QLabel, QLineEdit, QMenu, QMenuBar, QPushButton, QSpinBox, QTextEdit,
         QVBoxLayout)
@@ -134,4 +134,4 @@ if __name__ == '__main__':
 
     app = QApplication(sys.argv)
     dialog = Dialog()
-    sys.exit(dialog.exec_())
+    sys.exit(dialog.exec())

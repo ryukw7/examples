@@ -43,10 +43,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QEvent, QRectF, Qt, QTimeLine
-from PyQt5.QtGui import (QBrush, QColor, QPainter, QPainterPath, QPixmap,
+from PyQt6.QtCore import QEvent, QRectF, Qt, QTimeLine
+from PyQt6.QtGui import (QBrush, QColor, QPainter, QPainterPath, QPixmap,
         QTransform)
-from PyQt5.QtWidgets import (QApplication, QDialog, QGraphicsItem,
+from PyQt6.QtWidgets import (QApplication, QDialog, QGraphicsItem,
         QGraphicsProxyWidget, QGraphicsScene, QGraphicsView, QStyleFactory,
         QWidget)
 
@@ -234,4 +234,4 @@ if __name__ == '__main__':
     view.show()
     view.setWindowTitle("Embedded Dialogs Demo")
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

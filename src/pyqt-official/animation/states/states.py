@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (QPointF, QPropertyAnimation, QRect, QRectF,
+from PyQt6.QtCore import (QPointF, QPropertyAnimation, QRect, QRectF,
         QSequentialAnimationGroup, QSizeF, QState, QStateMachine, Qt)
-from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import (QApplication, QGraphicsLinearLayout,
+from PyQt6.QtGui import QPixmap
+from PyQt6.QtWidgets import (QApplication, QGraphicsLinearLayout,
         QGraphicsObject, QGraphicsProxyWidget, QGraphicsScene, QGraphicsView,
         QGraphicsWidget, QGroupBox, QPushButton, QRadioButton, QTextEdit,
         QVBoxLayout)
@@ -269,4 +269,4 @@ if __name__ == '__main__':
     view = QGraphicsView(scene)
     view.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

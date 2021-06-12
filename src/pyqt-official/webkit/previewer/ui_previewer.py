@@ -3,11 +3,11 @@
 # Form implementation generated from reading ui file 'previewer.ui'
 #
 # Created: Tue May 14 22:35:29 2013
-#      by: PyQt5 UI code generator 5.0-snapshot-3507ed3a4178
+#      by: PyQt6 UI code generator 5.0-snapshot-3507ed3a4178
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -59,4 +59,4 @@ class Ui_Form(object):
         self.previewButton.setText(_translate("Form", "Preview"))
         self.previewerBox.setTitle(_translate("Form", "HTML Preview"))
 
-from PyQt5 import QtWebKitWidgets
+from PyQt6 import QtWebKitWidgets

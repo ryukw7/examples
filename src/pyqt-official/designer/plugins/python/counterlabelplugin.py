@@ -23,8 +23,8 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-from PyQt5.QtGui import QIcon
-from PyQt5.QtDesigner import QPyDesignerCustomWidgetPlugin
+from PyQt6.QtGui import QIcon
+from PyQt6.QtDesigner import QPyDesignerCustomWidgetPlugin
 
 from counterlabel import CounterLabel
 

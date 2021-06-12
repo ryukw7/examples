@@ -42,11 +42,11 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (QByteArray, QDataStream, QFile, QIODevice, QMimeData,
+from PyQt6.QtCore import (QByteArray, QDataStream, QFile, QIODevice, QMimeData,
         QPoint, QRect, QRectF, Qt, QTextStream)
-from PyQt5.QtGui import (QDrag, QFont, QFontMetrics, QImage, QPainter,
+from PyQt6.QtGui import (QDrag, QFont, QFontMetrics, QImage, QPainter,
         QPalette, QPixmap, qRgba)
-from PyQt5.QtWidgets import QApplication, QLabel, QWidget
+from PyQt6.QtWidgets import QApplication, QLabel, QWidget
 
 import fridgemagnets_rc
 
@@ -97,7 +97,7 @@ class DragLabel(QLabel):
 
         self.hide()
 
-        if drag.exec_(Qt.MoveAction | Qt.CopyAction, Qt.CopyAction) == Qt.MoveAction:
+        if drag.exec(Qt.MoveAction | Qt.CopyAction, Qt.CopyAction) == Qt.MoveAction:
             self.close()
         else:
             self.show()
@@ -193,4 +193,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = DragWidget()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

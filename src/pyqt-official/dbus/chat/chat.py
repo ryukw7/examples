@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import pyqtSignal, pyqtSlot, Q_CLASSINFO
-from PyQt5.QtWidgets import QApplication, QDialog, QMainWindow, QMessageBox
-from PyQt5.QtDBus import (QDBusAbstractAdaptor, QDBusAbstractInterface,
+from PyQt6.QtCore import pyqtSignal, pyqtSlot, Q_CLASSINFO
+from PyQt6.QtWidgets import QApplication, QDialog, QMainWindow, QMessageBox
+from PyQt6.QtDBus import (QDBusAbstractAdaptor, QDBusAbstractInterface,
         QDBusConnection, QDBusMessage)
 
 from ui_chatmainwindow import Ui_ChatMainWindow
@@ -121,7 +121,7 @@ class ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
 
         dialog = NicknameDialog()
         dialog.cancelButton.setVisible(False)
-        dialog.exec_()
+        dialog.exec()
         self.m_nickname = dialog.nickname.text().strip()
         self.action.emit(self.m_nickname, "joins the chat")
 
@@ -162,7 +162,7 @@ class ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
     def changeNickname(self):
         dialog = NicknameDialog(self)
 
-        if dialog.exec_() == QDialog.Accepted:
+        if dialog.exec() == QDialog.Accepted:
             old = self.m_nickname
             self.m_nickname = dialog.nickname.text().strip()
             self.action.emit(old, "is now known as %s" % self.m_nickname)
@@ -197,4 +197,4 @@ if __name__ == '__main__':
     chat = ChatMainWindow()
     chat.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

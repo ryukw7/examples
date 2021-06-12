@@ -16,7 +16,7 @@ Finding the PyQt Examples and Demos launcher
 On Windows:
 
 The launcher can be accessed via the Windows Start menu. Select the menu
-entry entitled "Examples and Demos" entry in the submenu containing PyQt5.
+entry entitled "Examples and Demos" entry in the submenu containing PyQt6.
 
 On all platforms:
 

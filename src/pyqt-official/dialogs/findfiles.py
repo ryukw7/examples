@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (QDir, QIODevice, QFile, QFileInfo, Qt, QTextStream,
+from PyQt6.QtCore import (QDir, QIODevice, QFile, QFileInfo, Qt, QTextStream,
         QUrl)
-from PyQt5.QtGui import QDesktopServices
-from PyQt5.QtWidgets import (QAbstractItemView, QApplication, QComboBox,
+from PyQt6.QtGui import QDesktopServices
+from PyQt6.QtWidgets import (QAbstractItemView, QApplication, QComboBox,
         QDialog, QFileDialog, QGridLayout, QHBoxLayout, QHeaderView, QLabel,
         QProgressDialog, QPushButton, QSizePolicy, QTableWidget,
         QTableWidgetItem)
@@ -212,4 +212,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

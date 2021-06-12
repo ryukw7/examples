@@ -42,7 +42,7 @@
 
 import math
 
-from PyQt5.QtCore import QPointF
+from PyQt6.QtCore import QPointF
 
 from guide import Guide
 

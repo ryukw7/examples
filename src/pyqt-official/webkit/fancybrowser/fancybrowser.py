@@ -42,11 +42,11 @@
 ###########################################################################
 
 
-from PyQt5.QtCore import QFile, QIODevice, Qt, QTextStream, QUrl
-from PyQt5.QtWidgets import (QAction, QApplication, QLineEdit, QMainWindow,
+from PyQt6.QtCore import QFile, QIODevice, Qt, QTextStream, QUrl
+from PyQt6.QtWidgets import (QAction, QApplication, QLineEdit, QMainWindow,
         QSizePolicy, QStyle, QTextEdit)
-from PyQt5.QtNetwork import QNetworkProxyFactory, QNetworkRequest
-from PyQt5.QtWebKitWidgets import QWebPage, QWebView
+from PyQt6.QtNetwork import QNetworkProxyFactory, QNetworkRequest
+from PyQt6.QtWebKitWidgets import QWebPage, QWebView
 
 import jquery_rc
 
@@ -208,4 +208,4 @@ if __name__ == '__main__':
     browser = MainWindow(url)
     browser.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

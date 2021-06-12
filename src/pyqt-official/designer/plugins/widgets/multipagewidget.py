@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
 #============================================================================#
-# PyQt5 port of the designer/containerextension example from Qt v5.x         #
+# PyQt6 port of the designer/containerextension example from Qt v5.x         #
 #----------------------------------------------------------------------------#
-from PyQt5.QtCore import pyqtProperty, pyqtSignal, pyqtSlot, QSize
-from PyQt5.QtWidgets import (QApplication, QComboBox, QLabel, QStackedWidget,
+from PyQt6.QtCore import pyqtProperty, pyqtSignal, pyqtSlot, QSize
+from PyQt6.QtWidgets import (QApplication, QComboBox, QLabel, QStackedWidget,
         QVBoxLayout, QWidget)
 
 
@@ -100,7 +100,7 @@ if __name__ == "__main__":
     widget.addPage(QLabel('This is page #1'))
     widget.addPage(QLabel('This is page #2'))
     widget.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
 
 #============================================================================#
 # EOF                                                                        #

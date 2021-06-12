@@ -13,7 +13,7 @@
    </rect>
   </property>
   <property name="windowTitle" >
-   <string>PyQt5.uic Demo Dialog</string>
+   <string>PyQt6.uic Demo Dialog</string>
   </property>
   <layout class="QGridLayout" >
    <property name="margin" >

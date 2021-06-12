@@ -40,7 +40,7 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QFile, QFileInfo, QRectF, QTextStream
+from PyQt6.QtCore import QFile, QFileInfo, QRectF, QTextStream
 
 from colors import Colors
 from demoitem import DemoItem

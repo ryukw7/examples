@@ -46,12 +46,12 @@
 
 import math
 
-from PyQt5.QtCore import (pyqtSignal, QBasicTimer, QObject, QPoint, QPointF,
+from PyQt6.QtCore import (pyqtSignal, QBasicTimer, QObject, QPoint, QPointF,
         QRect, QSize, QStandardPaths, Qt, QUrl)
-from PyQt5.QtGui import (QColor, QDesktopServices, QImage, QPainter,
+from PyQt6.QtGui import (QColor, QDesktopServices, QImage, QPainter,
         QPainterPath, QPixmap, QRadialGradient)
-from PyQt5.QtWidgets import QAction, QApplication, QMainWindow, QWidget
-from PyQt5.QtNetwork import (QNetworkAccessManager, QNetworkDiskCache,
+from PyQt6.QtWidgets import QAction, QApplication, QMainWindow, QWidget
+from PyQt6.QtNetwork import (QNetworkAccessManager, QNetworkDiskCache,
         QNetworkRequest)
 
 
@@ -479,4 +479,4 @@ if __name__ == '__main__':
     w.setWindowTitle("OpenStreetMap")
     w.resize(600, 450)
     w.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

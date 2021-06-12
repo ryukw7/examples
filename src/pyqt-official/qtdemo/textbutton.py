@@ -40,8 +40,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QPointF, QRect, QRectF, QSize, Qt
-from PyQt5.QtGui import (QColor, QImage, QLinearGradient, QPainter,
+from PyQt6.QtCore import QPointF, QRect, QRectF, QSize, Qt
+from PyQt6.QtGui import (QColor, QImage, QLinearGradient, QPainter,
         QPainterPath, QPen)
 
 from colors import Colors

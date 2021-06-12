@@ -3,11 +3,11 @@
 # Form implementation generated from reading ui file 'videosettings.ui'
 #
 # Created: Fri Jun 28 11:48:14 2013
-#      by: PyQt5 UI code generator 5.0-snapshot-478d7f271b71
+#      by: PyQt6 UI code generator 5.0-snapshot-478d7f271b71
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 class Ui_VideoSettingsUi(object):
     def setupUi(self, VideoSettingsUi):

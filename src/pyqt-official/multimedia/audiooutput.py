@@ -45,10 +45,10 @@
 from math import pi, sin
 from struct import pack
 
-from PyQt5.QtCore import QByteArray, QIODevice, Qt, QTimer, qWarning
-from PyQt5.QtMultimedia import (QAudio, QAudioDeviceInfo, QAudioFormat,
+from PyQt6.QtCore import QByteArray, QIODevice, Qt, QTimer, qWarning
+from PyQt6.QtMultimedia import (QAudio, QAudioDeviceInfo, QAudioFormat,
         QAudioOutput)
-from PyQt5.QtWidgets import (QApplication, QComboBox, QHBoxLayout, QLabel,
+from PyQt6.QtWidgets import (QApplication, QComboBox, QHBoxLayout, QLabel,
         QMainWindow, QPushButton, QSlider, QVBoxLayout, QWidget)
 
 
@@ -292,4 +292,4 @@ if __name__ == '__main__':
     audio = AudioTest()
     audio.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

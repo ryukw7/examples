@@ -45,9 +45,9 @@
 
 import sys
 
-from PyQt5.QtCore import (QCommandLineOption, QCommandLineParser,
+from PyQt6.QtCore import (QCommandLineOption, QCommandLineParser,
         QCoreApplication, QDir, QT_VERSION_STR)
-from PyQt5.QtWidgets import (QApplication, QFileIconProvider, QFileSystemModel,
+from PyQt6.QtWidgets import (QApplication, QFileIconProvider, QFileSystemModel,
         QTreeView)
 
 
@@ -93,4 +93,4 @@ tree.setColumnWidth(0, tree.width() / 3)
 tree.setWindowTitle("Dir View")
 tree.show()
 
-sys.exit(app.exec_())
+sys.exit(app.exec())

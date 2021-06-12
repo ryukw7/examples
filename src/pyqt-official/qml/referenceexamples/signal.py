@@ -44,10 +44,10 @@
 
 import sys
 
-from PyQt5.QtCore import (pyqtProperty, pyqtSignal, Q_CLASSINFO,
+from PyQt6.QtCore import (pyqtProperty, pyqtSignal, Q_CLASSINFO,
         QCoreApplication, QDate, QObject, QTime, QUrl)
-from PyQt5.QtGui import QColor
-from PyQt5.QtQml import (qmlAttachedPropertiesObject, qmlRegisterType,
+from PyQt6.QtGui import QColor
+from PyQt6.QtQml import (qmlAttachedPropertiesObject, qmlRegisterType,
         QQmlComponent, QQmlEngine, QQmlListProperty)
 
 

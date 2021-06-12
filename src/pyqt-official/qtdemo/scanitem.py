@@ -40,8 +40,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QRect
-from PyQt5.QtGui import QColor, QImage, QPainter, QPen
+from PyQt6.QtCore import QRect
+from PyQt6.QtGui import QColor, QImage, QPainter, QPen
 
 from colors import Colors
 from demoitem import DemoItem

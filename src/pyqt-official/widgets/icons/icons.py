@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QFileInfo, QRegExp, QSize, Qt
-from PyQt5.QtGui import QIcon, QImage, QPalette, QPixmap
-from PyQt5.QtWidgets import (QAbstractItemView, QAction, QActionGroup,
+from PyQt6.QtCore import QFileInfo, QRegExp, QSize, Qt
+from PyQt6.QtGui import QIcon, QImage, QPalette, QPixmap
+from PyQt6.QtWidgets import (QAbstractItemView, QAction, QActionGroup,
         QApplication, QComboBox, QFileDialog, QFrame, QGridLayout, QGroupBox,
         QHBoxLayout, QHeaderView, QItemDelegate, QLabel, QMainWindow,
         QMessageBox, QRadioButton, QSizePolicy, QSpinBox, QStyle,
@@ -472,4 +472,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     mainWin = MainWindow()
     mainWin.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

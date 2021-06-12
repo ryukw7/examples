@@ -44,9 +44,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QBuffer, QDataStream, QSharedMemory
-from PyQt5.QtGui import QImage, QPixmap
-from PyQt5.QtWidgets import QApplication, QDialog, QFileDialog
+from PyQt6.QtCore import QBuffer, QDataStream, QSharedMemory
+from PyQt6.QtGui import QImage, QPixmap
+from PyQt6.QtWidgets import QApplication, QDialog, QFileDialog
 
 from dialog import Ui_Dialog
 
@@ -178,4 +178,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     dialog = Dialog()
     dialog.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

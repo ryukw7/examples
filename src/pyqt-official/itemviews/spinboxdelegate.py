@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QModelIndex, Qt
-from PyQt5.QtGui import QStandardItemModel
-from PyQt5.QtWidgets import (QApplication, QSpinBox, QStyledItemDelegate,
+from PyQt6.QtCore import QModelIndex, Qt
+from PyQt6.QtGui import QStandardItemModel
+from PyQt6.QtWidgets import (QApplication, QSpinBox, QStyledItemDelegate,
         QTableView)
 
 
@@ -92,4 +92,4 @@ if __name__ == '__main__':
 
     tableView.setWindowTitle("Spin Box Delegate")
     tableView.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

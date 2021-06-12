@@ -42,11 +42,11 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (QAbstractTransition, QEasingCurve, QEvent,
+from PyQt6.QtCore import (QAbstractTransition, QEasingCurve, QEvent,
         QParallelAnimationGroup, QPropertyAnimation, qrand, QRect,
         QSequentialAnimationGroup, qsrand, QState, QStateMachine, Qt, QTime,
         QTimer)
-from PyQt5.QtWidgets import (QApplication, QGraphicsScene, QGraphicsView,
+from PyQt6.QtWidgets import (QApplication, QGraphicsScene, QGraphicsView,
         QGraphicsWidget)
 
 
@@ -230,4 +230,4 @@ if __name__ == '__main__':
 
     qsrand(QTime(0, 0, 0).secsTo(QTime.currentTime()))
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -42,11 +42,11 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDir, QFile, QFileInfo, QIODevice, QUrl
-from PyQt5.QtWidgets import (QApplication, QDialog, QDialogButtonBox,
+from PyQt6.QtCore import QDir, QFile, QFileInfo, QIODevice, QUrl
+from PyQt6.QtWidgets import (QApplication, QDialog, QDialogButtonBox,
         QHBoxLayout, QLabel, QLineEdit, QMessageBox, QProgressDialog,
         QPushButton, QVBoxLayout)
-from PyQt5.QtNetwork import QNetworkAccessManager, QNetworkRequest
+from PyQt6.QtNetwork import QNetworkAccessManager, QNetworkRequest
 
 
 class HttpWindow(QDialog):
@@ -210,7 +210,7 @@ class HttpWindow(QDialog):
 
     def slotAuthenticationRequired(self, authenticator):
         import os
-        from PyQt5 import uic
+        from PyQt6 import uic
 
         ui = os.path.join(os.path.dirname(__file__), 'authenticationdialog.ui')
         dlg = uic.loadUi(ui)
@@ -220,7 +220,7 @@ class HttpWindow(QDialog):
         dlg.userEdit.setText(self.url.userName())
         dlg.passwordEdit.setText(self.url.password())
 
-        if dlg.exec_() == QDialog.Accepted:
+        if dlg.exec() == QDialog.Accepted:
             authenticator.setUser(dlg.userEdit.text())
             authenticator.setPassword(dlg.passwordEdit.text())
 
@@ -242,4 +242,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     httpWin = HttpWindow()
     httpWin.show()
-    sys.exit(httpWin.exec_())
+    sys.exit(httpWin.exec())

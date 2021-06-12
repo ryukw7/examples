@@ -42,11 +42,11 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (QAbstractTableModel, QDir, QModelIndex, QRect,
+from PyQt6.QtCore import (QAbstractTableModel, QDir, QModelIndex, QRect,
         QRectF, QSize, Qt)
-from PyQt5.QtGui import QBrush, qGray, QImage, QPainter
-from PyQt5.QtPrintSupport import QPrintDialog, QPrinter
-from PyQt5.QtWidgets import (QAbstractItemDelegate, QApplication, QDialog,
+from PyQt6.QtGui import QBrush, qGray, QImage, QPainter
+from PyQt6.QtPrintSupport import QPrintDialog, QPrinter
+from PyQt6.QtWidgets import (QAbstractItemDelegate, QApplication, QDialog,
         QFileDialog, QHBoxLayout, QLabel, QMainWindow, QMessageBox, QMenu,
         QProgressDialog, QSpinBox, QStyle, QStyleOptionViewItem, QTableView,
         QVBoxLayout, QWidget)
@@ -226,7 +226,7 @@ class MainWindow(QMainWindow):
         dlg = QPrintDialog(printer, self)
         dlg.setWindowTitle("Print Image")
 
-        if dlg.exec_() != QDialog.Accepted:
+        if dlg.exec() != QDialog.Accepted:
             return
 
         painter = QPainter()
@@ -299,4 +299,4 @@ if __name__ == '__main__':
     window = MainWindow()
     window.show()
     window.openImage(':/images/qt.png')
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

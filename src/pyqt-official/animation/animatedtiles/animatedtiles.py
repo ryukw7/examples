@@ -42,12 +42,12 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (pyqtProperty, pyqtSignal, QEasingCurve, QObject,
+from PyQt6.QtCore import (pyqtProperty, pyqtSignal, QEasingCurve, QObject,
         QParallelAnimationGroup, QPointF, QPropertyAnimation, qrand, QRectF,
         QState, QStateMachine, Qt, QTimer)
-from PyQt5.QtGui import (QBrush, QLinearGradient, QPainter, QPainterPath,
+from PyQt6.QtGui import (QBrush, QLinearGradient, QPainter, QPainterPath,
         QPixmap)
-from PyQt5.QtWidgets import (QApplication, QGraphicsItem, QGraphicsPixmapItem,
+from PyQt6.QtWidgets import (QApplication, QGraphicsItem, QGraphicsPixmapItem,
         QGraphicsRectItem, QGraphicsScene, QGraphicsView, QGraphicsWidget,
         QStyle)
 
@@ -260,4 +260,4 @@ if __name__ == '__main__':
 
     states.start()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

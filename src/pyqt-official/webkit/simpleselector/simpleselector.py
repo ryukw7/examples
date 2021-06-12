@@ -43,8 +43,8 @@
 ###########################################################################
 
 
-from PyQt5.QtCore import QUrl
-from PyQt5.QtWidgets import QApplication, QWidget
+from PyQt6.QtCore import QUrl
+from PyQt6.QtWidgets import QApplication, QWidget
 
 from ui_window import Ui_Window
 
@@ -82,4 +82,4 @@ if __name__ == '__main__':
     win.setUrl(QUrl('http://www.webkit.org'))
     win.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

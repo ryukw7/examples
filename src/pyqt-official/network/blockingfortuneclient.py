@@ -42,12 +42,12 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (pyqtSignal, QDataStream, QMutex, QMutexLocker,
+from PyQt6.QtCore import (pyqtSignal, QDataStream, QMutex, QMutexLocker,
         QThread, QWaitCondition)
-from PyQt5.QtGui import QIntValidator
-from PyQt5.QtWidgets import (QApplication, QDialogButtonBox, QGridLayout,
+from PyQt6.QtGui import QIntValidator
+from PyQt6.QtWidgets import (QApplication, QDialogButtonBox, QGridLayout,
         QLabel, QLineEdit, QMessageBox, QPushButton, QWidget)
-from PyQt5.QtNetwork import (QAbstractSocket, QHostAddress, QNetworkInterface,
+from PyQt6.QtNetwork import (QAbstractSocket, QHostAddress, QNetworkInterface,
         QTcpSocket)
 
 
@@ -221,4 +221,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     client = BlockingClient()
     client.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

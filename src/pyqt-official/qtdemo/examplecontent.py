@@ -42,8 +42,8 @@
 
 from xml.dom.minidom import parseString
 
-from PyQt5.QtCore import QRectF, QRegExp, Qt
-from PyQt5.QtGui import QImage
+from PyQt6.QtCore import QRectF, QRegExp, Qt
+from PyQt6.QtGui import QImage
 
 from colors import Colors
 from demoitem import DemoItem

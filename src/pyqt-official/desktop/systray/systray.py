@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import (QAction, QApplication, QCheckBox, QComboBox,
+from PyQt6.QtGui import QIcon
+from PyQt6.QtWidgets import (QAction, QApplication, QCheckBox, QComboBox,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QMessageBox, QMenu, QPushButton, QSpinBox, QStyle, QSystemTrayIcon,
         QTextEdit, QVBoxLayout)
@@ -234,4 +234,4 @@ if __name__ == '__main__':
 
     window = Window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

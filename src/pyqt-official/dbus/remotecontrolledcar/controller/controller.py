@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtWidgets import QApplication, QWidget
-from PyQt5.QtDBus import QDBusAbstractInterface, QDBusConnection
+from PyQt6.QtWidgets import QApplication, QWidget
+from PyQt6.QtDBus import QDBusAbstractInterface, QDBusConnection
 
 from ui_controller import Ui_Controller
 
@@ -108,4 +108,4 @@ if __name__ == '__main__':
     controller = Controller()
     controller.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

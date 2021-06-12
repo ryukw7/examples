@@ -44,10 +44,10 @@
 
 import unicodedata
 
-from PyQt5.QtCore import pyqtSignal, QSize, Qt
-from PyQt5.QtGui import (QClipboard, QFont, QFontDatabase, QFontMetrics,
+from PyQt6.QtCore import pyqtSignal, QSize, Qt
+from PyQt6.QtGui import (QClipboard, QFont, QFontDatabase, QFontMetrics,
         QPainter)
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox, QFontComboBox,
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFontComboBox,
         QHBoxLayout, QLabel, QLineEdit, QMainWindow, QPushButton, QScrollArea,
         QToolTip, QVBoxLayout, QWidget)
 
@@ -278,4 +278,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

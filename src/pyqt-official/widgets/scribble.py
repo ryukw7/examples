@@ -42,11 +42,11 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDir, QPoint, QRect, QSize, Qt
-from PyQt5.QtGui import QImage, QImageWriter, QPainter, QPen, qRgb
-from PyQt5.QtWidgets import (QAction, QApplication, QColorDialog, QFileDialog,
+from PyQt6.QtCore import QDir, QPoint, QRect, QSize, Qt
+from PyQt6.QtGui import QImage, QImageWriter, QPainter, QPen, qRgb
+from PyQt6.QtWidgets import (QAction, QApplication, QColorDialog, QFileDialog,
         QInputDialog, QMainWindow, QMenu, QMessageBox, QWidget)
-from PyQt5.QtPrintSupport import QPrintDialog, QPrinter
+from PyQt6.QtPrintSupport import QPrintDialog, QPrinter
 
 
 class ScribbleArea(QWidget):
@@ -147,7 +147,7 @@ class ScribbleArea(QWidget):
         printer = QPrinter(QPrinter.HighResolution)
 
         printDialog = QPrintDialog(printer, self)
-        if printDialog.exec_() == QPrintDialog.Accepted:
+        if printDialog.exec() == QPrintDialog.Accepted:
             painter = QPainter(printer)
             rect = painter.viewport()
             size = self.image.size()
@@ -318,4 +318,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

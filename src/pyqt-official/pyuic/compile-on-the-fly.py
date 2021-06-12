@@ -41,9 +41,9 @@
 
 import sys
 
-from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QApplication, QDialog
-from PyQt5.uic import loadUiType
+from PyQt6.QtCore import pyqtSlot
+from PyQt6.QtWidgets import QApplication, QDialog
+from PyQt6.uic import loadUiType
 
 
 app = QApplication(sys.argv)
@@ -64,4 +64,4 @@ class DemoImpl(QDialog, form_class):
 
 form = DemoImpl()
 form.show()
-sys.exit(app.exec_())
+sys.exit(app.exec())

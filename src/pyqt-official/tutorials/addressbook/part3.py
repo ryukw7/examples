@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QGridLayout, QHBoxLayout, QLabel, QLineEdit,
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import (QGridLayout, QHBoxLayout, QLabel, QLineEdit,
         QMessageBox, QPushButton, QTextEdit, QVBoxLayout, QWidget)
 
 
@@ -242,11 +242,11 @@ class AddressBook(QWidget):
 if __name__ == '__main__':
     import sys
 
-    from PyQt5.QtWidgets import QApplication
+    from PyQt6.QtWidgets import QApplication
 
     app = QApplication(sys.argv)
 
     addressBook = AddressBook()
     addressBook.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

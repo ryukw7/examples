@@ -38,9 +38,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import pyqtProperty, QRectF
-from PyQt5.QtGui import QColor, QPainter, QPen
-from PyQt5.QtQuick import QQuickPaintedItem
+from PyQt6.QtCore import pyqtProperty, QRectF
+from PyQt6.QtGui import QColor, QPainter, QPen
+from PyQt6.QtQuick import QQuickPaintedItem
 
 
 class PieSlice(QQuickPaintedItem):

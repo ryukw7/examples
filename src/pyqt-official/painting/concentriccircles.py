@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QRect, QRectF, QSize, Qt, QTimer
-from PyQt5.QtGui import QColor, QPainter, QPalette, QPen
-from PyQt5.QtWidgets import (QApplication, QFrame, QGridLayout, QLabel,
+from PyQt6.QtCore import QRect, QRectF, QSize, Qt, QTimer
+from PyQt6.QtGui import QColor, QPainter, QPalette, QPen
+from PyQt6.QtWidgets import (QApplication, QFrame, QGridLayout, QLabel,
         QSizePolicy, QWidget)
 
 
@@ -143,4 +143,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

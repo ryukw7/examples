@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QPoint, QSize, Qt, QTime, QTimer
-from PyQt5.QtGui import QColor, QPainter, QPolygon, QRegion
-from PyQt5.QtWidgets import QAction, QApplication, QWidget
+from PyQt6.QtCore import QPoint, QSize, Qt, QTime, QTimer
+from PyQt6.QtGui import QColor, QPainter, QPolygon, QRegion
+from PyQt6.QtWidgets import QAction, QApplication, QWidget
 
 
 class ShapedClock(QWidget):
@@ -146,4 +146,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     clock = ShapedClock()
     clock.show()
-    sys.exit(app.exec_())    
+    sys.exit(app.exec())    

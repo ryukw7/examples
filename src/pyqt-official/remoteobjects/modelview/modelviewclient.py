@@ -52,9 +52,9 @@
 
 import sys
 
-from PyQt5.QtCore import QLoggingCategory, QUrl
-from PyQt5.QtRemoteObjects import QRemoteObjectNode
-from PyQt5.QtWidgets import QApplication, QTreeView
+from PyQt6.QtCore import QLoggingCategory, QUrl
+from PyQt6.QtRemoteObjects import QRemoteObjectNode
+from PyQt6.QtWidgets import QApplication, QTreeView
 
 
 QLoggingCategory.setFilterRules('qt.remoteobjects.debug=false\n'
@@ -75,4 +75,4 @@ model = node.acquireModel('RemoteModel')
 view.setModel(model)
 view.show();
 
-sys.exit(app.exec_())
+sys.exit(app.exec())

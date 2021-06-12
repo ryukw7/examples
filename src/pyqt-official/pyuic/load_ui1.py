@@ -41,11 +41,11 @@
 
 import sys
 
-from PyQt5.QtWidgets import QApplication
-from PyQt5.uic import loadUi
+from PyQt6.QtWidgets import QApplication
+from PyQt6.uic import loadUi
 
 
 app = QApplication(sys.argv)
 widget = loadUi('demo.ui')
 widget.show()
-sys.exit(app.exec_())
+sys.exit(app.exec())

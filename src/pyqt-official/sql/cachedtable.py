@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QApplication, QDialog, QDialogButtonBox,
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import (QApplication, QDialog, QDialogButtonBox,
         QHBoxLayout, QMessageBox, QPushButton, QTableView)
-from PyQt5.QtSql import QSqlTableModel
+from PyQt6.QtSql import QSqlTableModel
 
 import connection
 
@@ -107,4 +107,4 @@ if __name__ == '__main__':
 
     editor = TableEditor('person')
     editor.show()
-    sys.exit(editor.exec_())
+    sys.exit(editor.exec())

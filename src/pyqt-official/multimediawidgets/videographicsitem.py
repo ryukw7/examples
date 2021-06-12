@@ -42,11 +42,11 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDir, QSize, QSizeF, Qt, QUrl
-from PyQt5.QtGui import QTransform
-from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer
-from PyQt5.QtMultimediaWidgets import QGraphicsVideoItem
-from PyQt5.QtWidgets import (QApplication, QFileDialog, QGraphicsScene,
+from PyQt6.QtCore import QDir, QSize, QSizeF, Qt, QUrl
+from PyQt6.QtGui import QTransform
+from PyQt6.QtMultimedia import QMediaContent, QMediaPlayer
+from PyQt6.QtMultimediaWidgets import QGraphicsVideoItem
+from PyQt6.QtWidgets import (QApplication, QFileDialog, QGraphicsScene,
         QGraphicsView, QHBoxLayout, QPushButton, QSlider, QStyle, QVBoxLayout,
         QWidget)
 
@@ -153,4 +153,4 @@ if __name__ == '__main__':
     player = VideoPlayer()
     player.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

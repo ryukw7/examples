@@ -44,10 +44,10 @@
 
 from math import cos, pi, sin
 
-from PyQt5.QtCore import QSize, Qt
-from PyQt5.QtGui import (QBrush, QColor, QFont, QLinearGradient, QPainter,
+from PyQt6.QtCore import QSize, Qt
+from PyQt6.QtGui import (QBrush, QColor, QFont, QLinearGradient, QPainter,
         QPainterPath, QPalette, QPen)
-from PyQt5.QtWidgets import (QApplication, QComboBox, QGridLayout, QLabel,
+from PyQt6.QtWidgets import (QApplication, QComboBox, QGridLayout, QLabel,
         QSizePolicy, QSpinBox, QWidget)
 
 
@@ -295,4 +295,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

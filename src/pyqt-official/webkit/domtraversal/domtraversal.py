@@ -43,8 +43,8 @@
 ###########################################################################
 
 
-from PyQt5.QtCore import QUrl
-from PyQt5.QtWidgets import QApplication, QMainWindow, QTreeWidgetItem
+from PyQt6.QtCore import QUrl
+from PyQt6.QtWidgets import QApplication, QMainWindow, QTreeWidgetItem
 
 from ui_window import Ui_Window
 
@@ -86,4 +86,4 @@ if __name__ == '__main__':
     window.show()
     window.setUrl(QUrl('http://qt-project.org/'))
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

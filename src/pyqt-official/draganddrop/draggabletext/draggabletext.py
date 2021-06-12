@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QFile, QIODevice, QMimeData, QPoint, Qt, QTextStream
-from PyQt5.QtGui import QDrag, QPalette, QPixmap
-from PyQt5.QtWidgets import QApplication, QFrame, QLabel, QWidget
+from PyQt6.QtCore import QFile, QIODevice, QMimeData, QPoint, Qt, QTextStream
+from PyQt6.QtGui import QDrag, QPalette, QPixmap
+from PyQt6.QtWidgets import QApplication, QFrame, QLabel, QWidget
 
 import draggabletext_rc
 
@@ -73,7 +73,7 @@ class DragLabel(QLabel):
         drag.setPixmap(pixmap)
         drag.setHotSpot(hotSpot)
 
-        dropAction = drag.exec_(Qt.CopyAction | Qt.MoveAction, Qt.CopyAction)
+        dropAction = drag.exec(Qt.CopyAction | Qt.MoveAction, Qt.CopyAction)
 
         if dropAction == Qt.MoveAction:
             self.close()
@@ -152,4 +152,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = DragWidget()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

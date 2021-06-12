@@ -41,8 +41,8 @@
 
 import sys
 
-from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import (QApplication, QLabel, QLineEdit, QMainWindow,
+from PyQt6.QtCore import pyqtSlot
+from PyQt6.QtWidgets import (QApplication, QLabel, QLineEdit, QMainWindow,
         QMessageBox, QProgressBar)
 
 import mainwindow_rc
@@ -144,4 +144,4 @@ if __name__ == "__main__":
     a = QApplication(sys.argv)
     w = MainWindow()
     w.show()
-    sys.exit(a.exec_())
+    sys.exit(a.exec())

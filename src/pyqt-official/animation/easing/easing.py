@@ -42,11 +42,11 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (pyqtProperty, QEasingCurve, QObject, QPoint, QPointF,
+from PyQt6.QtCore import (pyqtProperty, QEasingCurve, QObject, QPoint, QPointF,
         QPropertyAnimation, QRect, QRectF, QSize, Qt)
-from PyQt5.QtGui import (QBrush, QColor, QIcon, QLinearGradient, QPainter,
+from PyQt6.QtGui import (QBrush, QColor, QIcon, QLinearGradient, QPainter,
         QPainterPath, QPixmap)
-from PyQt5.QtWidgets import (QApplication, QGraphicsPixmapItem, QGraphicsScene,
+from PyQt6.QtWidgets import (QApplication, QGraphicsPixmapItem, QGraphicsScene,
         QListWidgetItem, QWidget)
 
 import easing_rc
@@ -264,4 +264,4 @@ if __name__ == '__main__':
     w = Window()
     w.resize(400, 400)
     w.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

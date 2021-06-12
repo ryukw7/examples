@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (QAbstractItemModel, QFile, QIODevice,
+from PyQt6.QtCore import (QAbstractItemModel, QFile, QIODevice,
         QItemSelectionModel, QModelIndex, Qt)
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt6.QtWidgets import QApplication, QMainWindow
 
 import editabletreemodel_rc
 from ui_mainwindow import Ui_MainWindow
@@ -419,4 +419,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

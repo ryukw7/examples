@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (pyqtSignal, QPointF, QPropertyAnimation, QRect,
+from PyQt6.QtCore import (pyqtSignal, QPointF, QPropertyAnimation, QRect,
         QRectF, QState, QStateMachine, Qt)
-from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import (QApplication, QGraphicsScene, QGraphicsView,
+from PyQt6.QtGui import QPixmap
+from PyQt6.QtWidgets import (QApplication, QGraphicsScene, QGraphicsView,
         QGraphicsWidget)
 
 import appchooser_rc
@@ -136,4 +136,4 @@ if __name__ == '__main__':
     window.resize(300, 300)
     window.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

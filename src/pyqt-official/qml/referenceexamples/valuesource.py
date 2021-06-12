@@ -44,10 +44,10 @@
 
 import sys
 
-from PyQt5.QtCore import (pyqtProperty, pyqtSignal, pyqtSlot, Q_CLASSINFO,
+from PyQt6.QtCore import (pyqtProperty, pyqtSignal, pyqtSlot, Q_CLASSINFO,
         QCoreApplication, QDate, QObject, QTime, QTimer, QUrl)
-from PyQt5.QtGui import QColor
-from PyQt5.QtQml import (qmlAttachedPropertiesObject, qmlRegisterType,
+from PyQt6.QtGui import QColor
+from PyQt6.QtQml import (qmlAttachedPropertiesObject, qmlRegisterType,
         QQmlComponent, QQmlEngine, QQmlListProperty, QQmlProperty,
         QQmlPropertyValueSource)
 
@@ -322,4 +322,4 @@ else:
     for e in component.errors():
         print("Error:", e.toString());
 
-sys.exit(app.exec_())
+sys.exit(app.exec())

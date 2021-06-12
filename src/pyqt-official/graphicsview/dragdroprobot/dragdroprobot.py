@@ -42,12 +42,12 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (QEasingCurve, QFileInfo, QLineF, QMimeData,
+from PyQt6.QtCore import (QEasingCurve, QFileInfo, QLineF, QMimeData,
         QParallelAnimationGroup, QPoint, QPointF, QPropertyAnimation, qrand,
         QRectF, qsrand, Qt, QTime)
-from PyQt5.QtGui import (QBrush, QColor, QDrag, QImage, QPainter, QPen,
+from PyQt6.QtGui import (QBrush, QColor, QDrag, QImage, QPainter, QPen,
         QPixmap, QTransform)
-from PyQt5.QtWidgets import (QApplication, QGraphicsItem, QGraphicsObject,
+from PyQt6.QtWidgets import (QApplication, QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsView)
 
 
@@ -114,7 +114,7 @@ class ColorItem(QGraphicsItem):
             drag.setPixmap(pixmap)
             drag.setHotSpot(QPoint(15, 20))
 
-        drag.exec_()
+        drag.exec()
         self.setCursor(Qt.OpenHandCursor)
 
     def mouseReleaseEvent(self, event):
@@ -311,4 +311,4 @@ if __name__== '__main__':
     view.setWindowTitle("Drag and Drop Robot")
     view.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

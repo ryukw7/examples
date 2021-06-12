@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QPoint, QRect, QSize, Qt
-from PyQt5.QtGui import (QBrush, QConicalGradient, QLinearGradient, QPainter,
+from PyQt6.QtCore import QPoint, QRect, QSize, Qt
+from PyQt6.QtGui import (QBrush, QConicalGradient, QLinearGradient, QPainter,
         QPainterPath, QPalette, QPen, QPixmap, QPolygon, QRadialGradient)
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox, QGridLayout,
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QComboBox, QGridLayout,
         QLabel, QSpinBox, QWidget)
 
 import basicdrawing_rc
@@ -346,4 +346,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -43,9 +43,9 @@
 ###########################################################################
 
 
-from PyQt5.QtCore import QFile, QIODevice, QTextStream, QUrl
-from PyQt5.QtGui import QKeySequence
-from PyQt5.QtWidgets import (QAction, QApplication, QFileDialog, QInputDialog,
+from PyQt6.QtCore import QFile, QIODevice, QTextStream, QUrl
+from PyQt6.QtGui import QKeySequence
+from PyQt6.QtWidgets import (QAction, QApplication, QFileDialog, QInputDialog,
         QLineEdit, QMainWindow, QMessageBox, QWidget)
 
 from ui_previewer import Ui_Form
@@ -175,4 +175,4 @@ if __name__ == '__main__':
     mainWindow = MainWindow()
     mainWindow.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

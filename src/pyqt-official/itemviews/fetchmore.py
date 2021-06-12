@@ -43,9 +43,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (pyqtSignal, QAbstractListModel, QDir, QLibraryInfo,
+from PyQt6.QtCore import (pyqtSignal, QAbstractListModel, QDir, QLibraryInfo,
         QModelIndex, Qt)
-from PyQt5.QtWidgets import (QApplication, QGridLayout, QLabel, QLineEdit,
+from PyQt6.QtWidgets import (QApplication, QGridLayout, QLabel, QLineEdit,
         QListView, QSizePolicy, QTextBrowser, QWidget)
 
 
@@ -148,4 +148,4 @@ if __name__ == '__main__':
     window = Window()
     window.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDate, QSize, Qt
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox, QDateTimeEdit,
+from PyQt6.QtCore import QDate, QSize, Qt
+from PyQt6.QtGui import QIcon
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDateTimeEdit,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QListView, QListWidget, QListWidgetItem, QPushButton, QSpinBox,
         QStackedWidget, QVBoxLayout, QWidget)
@@ -241,4 +241,4 @@ if __name__ == '__main__':
 
     app = QApplication(sys.argv)
     dialog = ConfigDialog()
-    sys.exit(dialog.exec_())    
+    sys.exit(dialog.exec())    

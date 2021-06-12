@@ -3,11 +3,11 @@
 # Form implementation generated from reading ui file 'formextractor.ui'
 #
 # Created: Tue May 14 17:59:08 2013
-#      by: PyQt5 UI code generator 5.0-snapshot-b0831183bf83
+#      by: PyQt6 UI code generator 5.0-snapshot-b0831183bf83
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -84,4 +84,4 @@ class Ui_Form(object):
         self.genderLabel.setText(_translate("Form", "Gender"))
         self.updatesLabel.setText(_translate("Form", "Receive Updates"))
 
-from PyQt5 import QtWebKitWidgets
+from PyQt6 import QtWebKitWidgets

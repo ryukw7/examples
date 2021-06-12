@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDate, QDateTime, Qt, QTime
-from PyQt5.QtWidgets import (QApplication, QComboBox, QDateEdit, QDateTimeEdit,
+from PyQt6.QtCore import QDate, QDateTime, Qt, QTime
+from PyQt6.QtWidgets import (QApplication, QComboBox, QDateEdit, QDateTimeEdit,
         QDoubleSpinBox, QGroupBox, QHBoxLayout, QLabel, QSpinBox, QTimeEdit,
         QVBoxLayout, QWidget)
 
@@ -210,4 +210,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)    
     window = Window()
     window.show()    
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

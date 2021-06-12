@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QPoint, QRect, QSize, Qt
-from PyQt5.QtWidgets import (QApplication, QLayout, QPushButton, QSizePolicy,
+from PyQt6.QtCore import QPoint, QRect, QSize, Qt
+from PyQt6.QtWidgets import (QApplication, QLayout, QPushButton, QSizePolicy,
         QWidget)
 
 
@@ -156,4 +156,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     mainWin = Window()
     mainWin.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

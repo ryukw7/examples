@@ -45,11 +45,11 @@
 import sys
 import math, random
 
-from PyQt5.QtCore import (QPoint, QPointF, QRect, QRectF, QSize, Qt, QTime,
+from PyQt6.QtCore import (QPoint, QPointF, QRect, QRectF, QSize, Qt, QTime,
         QTimer)
-from PyQt5.QtGui import (QBrush, QColor, QFontMetrics, QImage,
+from PyQt6.QtGui import (QBrush, QColor, QFontMetrics, QImage,
         QOpenGLVersionProfile, QPainter, QRadialGradient, QSurfaceFormat)
-from PyQt5.QtWidgets import QApplication, QOpenGLWidget
+from PyQt6.QtWidgets import QApplication, QOpenGLWidget
 
 
 class Bubble(object):
@@ -376,4 +376,4 @@ if __name__ == '__main__':
 
     window = GLWidget()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -3,11 +3,11 @@
 # Form implementation generated from reading ui file 'imagesettings.ui'
 #
 # Created: Fri Jun 28 11:48:28 2013
-#      by: PyQt5 UI code generator 5.0-snapshot-478d7f271b71
+#      by: PyQt6 UI code generator 5.0-snapshot-478d7f271b71
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 class Ui_ImageSettingsUi(object):
     def setupUi(self, ImageSettingsUi):

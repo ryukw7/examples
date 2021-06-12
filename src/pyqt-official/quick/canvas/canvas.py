@@ -44,9 +44,9 @@
 import sys
 import os.path
 
-from PyQt5.QtCore import QUrl
-from PyQt5.QtGui import QGuiApplication
-from PyQt5.QtQuick import QQuickView
+from PyQt6.QtCore import QUrl
+from PyQt6.QtGui import QGuiApplication
+from PyQt6.QtQuick import QQuickView
 
 # Access the shared module.
 sys.path.insert(1,
@@ -66,4 +66,4 @@ view.engine().quit.connect(app.quit)
 view.setSource(QUrl('qrc:///canvas/canvas.qml'))
 view.show()
 
-sys.exit(app.exec_())
+sys.exit(app.exec())

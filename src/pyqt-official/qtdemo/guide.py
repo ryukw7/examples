@@ -40,7 +40,7 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QLineF, QPointF
+from PyQt6.QtCore import QLineF, QPointF
 
 
 class Guide(object):

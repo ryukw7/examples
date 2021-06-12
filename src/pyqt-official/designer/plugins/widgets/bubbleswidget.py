@@ -25,10 +25,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 import random
 
-from PyQt5.QtCore import (pyqtProperty, pyqtSignal, pyqtSlot, QPointF, QRectF,
+from PyQt6.QtCore import (pyqtProperty, pyqtSignal, pyqtSlot, QPointF, QRectF,
         QSize, QSizeF, Qt, QTimer)
-from PyQt5.QtGui import QBrush, QColor, QPainter, QPen, QRadialGradient
-from PyQt5.QtWidgets import QApplication, QWidget
+from PyQt6.QtGui import QBrush, QColor, QPainter, QPen, QRadialGradient
+from PyQt6.QtWidgets import QApplication, QWidget
 
 
 class BaseClass(QWidget):
@@ -332,4 +332,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     widget = BubblesWidget()
     widget.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

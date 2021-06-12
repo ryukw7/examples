@@ -45,9 +45,9 @@
 import sys
 import math
 
-from PyQt5.QtCore import pyqtSignal, QPoint, QSize, Qt
-from PyQt5.QtGui import QColor, QOpenGLVersionProfile
-from PyQt5.QtWidgets import (QApplication, QHBoxLayout, QOpenGLWidget, QSlider,
+from PyQt6.QtCore import pyqtSignal, QPoint, QSize, Qt
+from PyQt6.QtGui import QColor, QOpenGLVersionProfile
+from PyQt6.QtWidgets import (QApplication, QHBoxLayout, QOpenGLWidget, QSlider,
         QWidget)
 
 
@@ -280,4 +280,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -43,9 +43,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import pyqtProperty, Qt, QVariant
-from PyQt5.QtGui import QColor
-from PyQt5.QtWidgets import (QApplication, QComboBox, QGridLayout,
+from PyQt6.QtCore import pyqtProperty, Qt, QVariant
+from PyQt6.QtGui import QColor
+from PyQt6.QtWidgets import (QApplication, QComboBox, QGridLayout,
         QItemEditorCreatorBase, QItemEditorFactory, QTableWidget,
         QTableWidgetItem, QWidget)
 
@@ -125,4 +125,4 @@ if __name__ == '__main__':
     window = Window()
     window.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

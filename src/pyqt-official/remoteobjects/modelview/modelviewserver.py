@@ -53,11 +53,11 @@
 
 import sys
 
-from PyQt5.QtCore import (pyqtSlot, QLoggingCategory, QModelIndex, QObject, Qt,
+from PyQt6.QtCore import (pyqtSlot, QLoggingCategory, QModelIndex, QObject, Qt,
         QTimer, QUrl)
-from PyQt5.QtGui import QColor, QStandardItem, QStandardItemModel
-from PyQt5.QtRemoteObjects import QRemoteObjectHost, QRemoteObjectRegistryHost
-from PyQt5.QtWidgets import QApplication, QTreeView
+from PyQt6.QtGui import QColor, QStandardItem, QStandardItemModel
+from PyQt6.QtRemoteObjects import QRemoteObjectHost, QRemoteObjectRegistryHost
+from PyQt6.QtWidgets import QApplication, QTreeView
 
 
 class TimerHandler(QObject):
@@ -166,4 +166,4 @@ if __name__ == '__main__':
     QTimer.singleShot(12000, handler.removeData)
     QTimer.singleShot(13000, handler.moveData)
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

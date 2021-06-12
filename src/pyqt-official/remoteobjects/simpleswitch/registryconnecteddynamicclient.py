@@ -53,8 +53,8 @@
 
 import sys
 
-from PyQt5.QtCore import pyqtSignal, pyqtSlot, QCoreApplication, QObject, QUrl
-from PyQt5.QtRemoteObjects import QRemoteObjectNode
+from PyQt6.QtCore import pyqtSignal, pyqtSlot, QCoreApplication, QObject, QUrl
+from PyQt6.QtRemoteObjects import QRemoteObjectNode
 
 
 class DynamicClient(QObject):
@@ -104,4 +104,4 @@ if __name__ == '__main__':
     # Create the client switch object and pass the replica to it.
     rswitch = DynamicClient(replica)
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -40,13 +40,13 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDate, QPoint, Qt
-from PyQt5.QtGui import QColor, QIcon, QKeySequence, QPainter, QPixmap
-from PyQt5.QtWidgets import (QAction, QActionGroup, QApplication, QColorDialog,
+from PyQt6.QtCore import QDate, QPoint, Qt
+from PyQt6.QtGui import QColor, QIcon, QKeySequence, QPainter, QPixmap
+from PyQt6.QtWidgets import (QAction, QActionGroup, QApplication, QColorDialog,
         QComboBox, QDialog, QFontDialog, QGroupBox, QHBoxLayout, QLabel,
         QLineEdit, QMainWindow, QMessageBox, QPushButton, QTableWidget,
         QTableWidgetItem, QToolBar, QVBoxLayout)
-from PyQt5.QtPrintSupport import QPrinter, QPrintPreviewDialog
+from PyQt6.QtPrintSupport import QPrinter, QPrintPreviewDialog
 
 import spreadsheet_rc
 
@@ -328,7 +328,7 @@ class SpreadSheet(QMainWindow):
         vLayout.addWidget(equalsLabel)
         vLayout.addStretch(1)
         vLayout.addItem(outLayout)
-        if addDialog.exec_():
+        if addDialog.exec():
             cell1 = cell1ColInput.currentText() + cell1RowInput.currentText()
             cell2 = cell2ColInput.currentText() + cell2RowInput.currentText()
             outCell = outColInput.currentText() + outRowInput.currentText()
@@ -528,7 +528,7 @@ class SpreadSheet(QMainWindow):
         view = PrintView()
         view.setModel(self.table.model())
         dlg.paintRequested.connect(view.print_)
-        dlg.exec_()
+        dlg.exec()
 
 
 if __name__ == '__main__':
@@ -540,4 +540,4 @@ if __name__ == '__main__':
     sheet.setWindowIcon(QIcon(QPixmap(":/images/interview.png")))
     sheet.resize(640, 420)
     sheet.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

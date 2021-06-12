@@ -24,8 +24,8 @@
 # OR PERFORMANCE OF THIS SOFTWARE.                                           #
 #----------------------------------------------------------------------------#
 
-from PyQt5.QtCore import pyqtProperty, Qt
-from PyQt5.QtWidgets import (QApplication, QCalendarWidget, QDateEdit,
+from PyQt6.QtCore import pyqtProperty, Qt
+from PyQt6.QtWidgets import (QApplication, QCalendarWidget, QDateEdit,
         QDateTimeEdit, QHBoxLayout, QWidget)
 
 
@@ -364,7 +364,7 @@ if __name__ == "__main__":
     w.setLayout(lay)
     w.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
 
 #============================================================================#
 # EOF                                                                        #

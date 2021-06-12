@@ -44,9 +44,9 @@
 
 import random
 
-from PyQt5.QtCore import QEvent, QPoint, QPointF, QSize, Qt
-from PyQt5.QtGui import QColor, QIcon, QPainter, QPainterPath, QPalette
-from PyQt5.QtWidgets import (QApplication, QStyle, QToolButton, QToolTip,
+from PyQt6.QtCore import QEvent, QPoint, QPointF, QSize, Qt
+from PyQt6.QtGui import QColor, QIcon, QPainter, QPainterPath, QPalette
+from PyQt6.QtWidgets import (QApplication, QStyle, QToolButton, QToolTip,
         QWidget)
 
 import tooltips_rc
@@ -275,4 +275,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     sortingBox = SortingBox()
     sortingBox.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -44,9 +44,9 @@
 
 import sys
 
-from PyQt5.QtCore import QDir, Qt
-from PyQt5.QtGui import QFont, QPalette
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QColorDialog, QDialog,
+from PyQt6.QtCore import QDir, Qt
+from PyQt6.QtGui import QFont, QPalette
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QColorDialog, QDialog,
         QErrorMessage, QFileDialog, QFontDialog, QFrame, QGridLayout,
         QInputDialog, QLabel, QLineEdit, QMessageBox, QPushButton)
 
@@ -300,7 +300,7 @@ class Dialog(QDialog):
                 Dialog.MESSAGE, QMessageBox.NoButton, self)
         msgBox.addButton("Save &Again", QMessageBox.AcceptRole)
         msgBox.addButton("&Continue", QMessageBox.RejectRole)
-        if msgBox.exec_() == QMessageBox.AcceptRole:
+        if msgBox.exec() == QMessageBox.AcceptRole:
             self.warningLabel.setText("Save Again")
         else:
             self.warningLabel.setText("Continue")
@@ -319,4 +319,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     dialog = Dialog()
     dialog.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

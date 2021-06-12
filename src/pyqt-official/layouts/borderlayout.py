@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QRect, QSize, Qt
-from PyQt5.QtWidgets import (QApplication, QFrame, QLabel, QLayout,
+from PyQt6.QtCore import QRect, QSize, Qt
+from PyQt6.QtWidgets import (QApplication, QFrame, QLabel, QLayout,
         QTextBrowser, QWidget, QWidgetItem)
 
 
@@ -237,4 +237,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Window()
     window.show()
-    sys.exit(app.exec_())    
+    sys.exit(app.exec())

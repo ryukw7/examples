@@ -43,9 +43,9 @@
 ###########################################################################
 
 
-from PyQt5.QtCore import QDate, QLocale, Qt
-from PyQt5.QtGui import QFont, QTextCharFormat
-from PyQt5.QtWidgets import (QApplication, QCalendarWidget, QCheckBox,
+from PyQt6.QtCore import QDate, QLocale, Qt
+from PyQt6.QtGui import QFont, QTextCharFormat
+from PyQt6.QtWidgets import (QApplication, QCalendarWidget, QCheckBox,
         QComboBox, QDateEdit, QGridLayout, QGroupBox, QHBoxLayout, QLabel,
         QLayout, QWidget)
 
@@ -414,4 +414,4 @@ if __name__ == '__main__':
     window = Window()
     window.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

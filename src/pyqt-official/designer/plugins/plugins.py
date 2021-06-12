@@ -42,8 +42,8 @@
 import sys
 import os
 
-from PyQt5.QtCore import QLibraryInfo, QProcess, QProcessEnvironment
-from PyQt5.QtWidgets import QApplication, QMessageBox
+from PyQt6.QtCore import QLibraryInfo, QProcess, QProcessEnvironment
+from PyQt6.QtWidgets import QApplication, QMessageBox
 
 
 app = QApplication(sys.argv)

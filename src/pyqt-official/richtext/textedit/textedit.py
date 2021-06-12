@@ -46,14 +46,14 @@
 
 import sys
 
-from PyQt5.QtCore import QFile, QFileInfo, Qt, QTextCodec
-from PyQt5.QtGui import (QFont, QFontDatabase, QFontInfo, QIcon, QKeySequence,
+from PyQt6.QtCore import QFile, QFileInfo, Qt, QTextCodec
+from PyQt6.QtGui import (QFont, QFontDatabase, QFontInfo, QIcon, QKeySequence,
         QPixmap, QTextBlockFormat, QTextCharFormat, QTextCursor,
         QTextDocumentWriter, QTextListFormat)
-from PyQt5.QtWidgets import (QAction, QActionGroup, QApplication, QColorDialog,
+from PyQt6.QtWidgets import (QAction, QActionGroup, QApplication, QColorDialog,
         QComboBox, QFileDialog, QFontComboBox, QMainWindow, QMenu, QMessageBox,
         QTextEdit, QToolBar)
-from PyQt5.QtPrintSupport import QPrintDialog, QPrinter, QPrintPreviewDialog
+from PyQt6.QtPrintSupport import QPrintDialog, QPrinter, QPrintPreviewDialog
 
 import textedit_rc
 
@@ -486,7 +486,7 @@ class TextEdit(QMainWindow):
 
         dlg.setWindowTitle("Print Document")
 
-        if dlg.exec_() == QPrintDialog.Accepted:
+        if dlg.exec() == QPrintDialog.Accepted:
             self.textEdit.print_(printer)
 
         del dlg
@@ -495,7 +495,7 @@ class TextEdit(QMainWindow):
         printer = QPrinter(QPrinter.HighResolution)
         preview = QPrintPreviewDialog(printer, self)
         preview.paintRequested.connect(self.printPreview)
-        preview.exec_()
+        preview.exec()
 
     def printPreview(self, printer):
         self.textEdit.print_(printer)
@@ -653,4 +653,4 @@ if __name__ == '__main__':
         textEdit.show()
         mainWindows.append(textEdit)
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

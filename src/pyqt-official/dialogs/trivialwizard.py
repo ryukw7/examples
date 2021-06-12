@@ -42,7 +42,7 @@
 #############################################################################
 
 
-from PyQt5.QtWidgets import (QApplication, QGridLayout, QLabel, QLineEdit,
+from PyQt6.QtWidgets import (QApplication, QGridLayout, QLabel, QLineEdit,
         QVBoxLayout, QWizard, QWizardPage)
 
 
@@ -111,4 +111,4 @@ if __name__ == '__main__':
     wizard.setWindowTitle("Trivial Wizard")
     wizard.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

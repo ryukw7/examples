@@ -39,8 +39,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import pyqtProperty, pyqtSignal, pyqtSlot
-from PyQt5.QtWidgets import QApplication, QTextEdit
+from PyQt6.QtCore import pyqtProperty, pyqtSignal, pyqtSlot
+from PyQt6.QtWidgets import QApplication, QTextEdit
 
 
 # The purpose of this class is to show that Designer's property editor shows
@@ -153,4 +153,4 @@ if __name__ == "__main__":
     demo = PyDemo()
     demo.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

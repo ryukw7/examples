@@ -54,8 +54,8 @@
 
 import math
 
-from PyQt5.QtCore import QAbstractTableModel, QByteArray, QDir, QStorageInfo, Qt
-from PyQt5.QtWidgets import QAbstractItemView, QApplication, QTreeView
+from PyQt6.QtCore import QAbstractTableModel, QByteArray, QDir, QStorageInfo, Qt
+from PyQt6.QtWidgets import QAbstractItemView, QApplication, QTreeView
 
 
 def sizeToString(size):
@@ -156,7 +156,7 @@ def main(args):
     for column in range(view.model().columnCount()):
         view.resizeColumnToContents(column)
     view.show()
-    return app.exec_()
+    return app.exec()
 
 
 if __name__ == '__main__':

@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (pyqtSignal, QMutex, QMutexLocker, QPoint, QSize, Qt,
+from PyQt6.QtCore import (pyqtSignal, QMutex, QMutexLocker, QPoint, QSize, Qt,
         QThread, QWaitCondition)
-from PyQt5.QtGui import QColor, QImage, QPainter, QPixmap, qRgb
-from PyQt5.QtWidgets import QApplication, QWidget
+from PyQt6.QtGui import QColor, QImage, QPainter, QPixmap, qRgb
+from PyQt6.QtWidgets import QApplication, QWidget
 
 
 DefaultCenterX = -0.647011
@@ -344,4 +344,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     widget = MandelbrotWidget()
     widget.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

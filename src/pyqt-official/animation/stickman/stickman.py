@@ -44,12 +44,12 @@
 
 import math
 
-from PyQt5.QtCore import (pyqtProperty, pyqtSignal, QDataStream, QDateTime,
+from PyQt6.QtCore import (pyqtProperty, pyqtSignal, QDataStream, QDateTime,
         QEvent, QEventTransition, QFile, QIODevice, QParallelAnimationGroup,
         QPointF, QPropertyAnimation, qrand, QRectF, QSignalTransition, qsrand,
         QState, QStateMachine, Qt, QTimer)
-from PyQt5.QtGui import QColor, QPen, QPainter, QPainterPath, QPixmap
-from PyQt5.QtWidgets import (QApplication, QGraphicsItem, QGraphicsObject,
+from PyQt6.QtGui import QColor, QPen, QPainter, QPainterPath, QPixmap
+from PyQt6.QtWidgets import (QApplication, QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView)
 
 import stickman_rc
@@ -654,4 +654,4 @@ if __name__ == '__main__':
     cycle.addActivity(':/animations/chilling', Qt.Key_C)
     cycle.start()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

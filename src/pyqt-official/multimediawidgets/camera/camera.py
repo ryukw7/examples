@@ -42,12 +42,12 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QByteArray, qFuzzyCompare, Qt, QTimer
-from PyQt5.QtGui import QPalette, QPixmap
-from PyQt5.QtMultimedia import (QAudioEncoderSettings, QCamera,
+from PyQt6.QtCore import QByteArray, qFuzzyCompare, Qt, QTimer
+from PyQt6.QtGui import QPalette, QPixmap
+from PyQt6.QtMultimedia import (QAudioEncoderSettings, QCamera,
         QCameraImageCapture, QImageEncoderSettings, QMediaMetaData,
         QMediaRecorder, QMultimedia, QVideoEncoderSettings)
-from PyQt5.QtWidgets import (QAction, QActionGroup, QApplication, QDialog,
+from PyQt6.QtWidgets import (QAction, QActionGroup, QApplication, QDialog,
         QMainWindow, QMessageBox)
 
 from ui_camera import Ui_Camera
@@ -362,7 +362,7 @@ class Camera(QMainWindow):
         settingsDialog.setVideoSettings(self.videoSettings)
         settingsDialog.setFormat(self.videoContainerFormat)
 
-        if settingsDialog.exec_():
+        if settingsDialog.exec():
             self.audioSettings = settingsDialog.audioSettings()
             self.videoSettings = settingsDialog.videoSettings()
             self.videoContainerFormat = settingsDialog.format()
@@ -375,7 +375,7 @@ class Camera(QMainWindow):
 
         settingsDialog.setImageSettings(self.imageSettings)
 
-        if settingsDialog.exec_():
+        if settingsDialog.exec():
             self.imageSettings = settingsDialog.imageSettings()
             self.imageCapture.setEncodingSettings(self.imageSettings)
 
@@ -509,4 +509,4 @@ if __name__ == '__main__':
     camera = Camera()
     camera.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

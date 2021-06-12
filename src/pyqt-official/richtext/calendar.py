@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDate, Qt
-from PyQt5.QtGui import (QColor, QFont, QTextCharFormat, QTextLength,
+from PyQt6.QtCore import QDate, Qt
+from PyQt6.QtGui import (QColor, QFont, QTextCharFormat, QTextLength,
         QTextTableFormat)
-from PyQt5.QtWidgets import (QApplication, QComboBox, QDateTimeEdit,
+from PyQt6.QtWidgets import (QApplication, QComboBox, QDateTimeEdit,
         QHBoxLayout, QLabel, QMainWindow, QSpinBox, QTextBrowser, QVBoxLayout,
         QWidget)
 
@@ -187,4 +187,4 @@ if __name__ == '__main__':
     window = MainWindow()
     window.resize(640, 256)
     window.show()
-    sys.exit(app.exec_())    
+    sys.exit(app.exec())

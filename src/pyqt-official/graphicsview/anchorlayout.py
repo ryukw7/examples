@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QSizeF, Qt
-from PyQt5.QtWidgets import (QApplication, QGraphicsAnchorLayout,
+from PyQt6.QtCore import QSizeF, Qt
+from PyQt6.QtWidgets import (QApplication, QGraphicsAnchorLayout,
         QGraphicsProxyWidget, QGraphicsScene, QGraphicsView, QGraphicsWidget,
         QPushButton, QSizePolicy)
 
@@ -127,4 +127,4 @@ if __name__ == '__main__':
     view = QGraphicsView(scene)
     view.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

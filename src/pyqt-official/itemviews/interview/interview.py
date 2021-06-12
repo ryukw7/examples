@@ -51,10 +51,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (QAbstractItemModel, QFileInfo, QItemSelectionModel,
+from PyQt6.QtCore import (QAbstractItemModel, QFileInfo, QItemSelectionModel,
         QModelIndex, Qt)
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import (QAbstractItemView, QApplication,
+from PyQt6.QtGui import QIcon
+from PyQt6.QtWidgets import (QAbstractItemView, QApplication,
         QFileIconProvider, QListView, QSplitter, QTableView, QTreeView)
 
 
@@ -183,7 +183,7 @@ def main(args):
     page.setWindowIcon(QIcon(images_dir + '/interview.png'))
     page.setWindowTitle("Interview")
     page.show()
-    return app.exec_()
+    return app.exec()
 
 
 if __name__ == '__main__':

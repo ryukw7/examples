@@ -60,10 +60,10 @@ Result:
 
 import sys
 
-from PyQt5.QtCore import pyqtSignal, QObject, QSize, Qt, QUrl
-from PyQt5.QtGui import QImage, QPainter
-from PyQt5.QtWidgets import QApplication
-from PyQt5.QtWebKitWidgets import QWebPage
+from PyQt6.QtCore import pyqtSignal, QObject, QSize, Qt, QUrl
+from PyQt6.QtGui import QImage, QPainter
+from PyQt6.QtWidgets import QApplication
+from PyQt6.QtWebKitWidgets import QWebPage
 
 
 def cout(s):
@@ -154,4 +154,4 @@ if __name__ == '__main__':
     capture.finished.connect(app.quit)
     capture.load(url, fileName)
 
-    app.exec_()
+    app.exec()

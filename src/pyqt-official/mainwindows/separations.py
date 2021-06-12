@@ -43,11 +43,11 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (pyqtSignal, QBuffer, QByteArray, QFileInfo,
+from PyQt6.QtCore import (pyqtSignal, QBuffer, QByteArray, QFileInfo,
         QIODevice, QMimeData, QPoint, QSize, Qt)
-from PyQt5.QtGui import (qBlue, QColor, QDrag, qGreen, QImage, QKeySequence,
+from PyQt6.QtGui import (qBlue, QColor, QDrag, qGreen, QImage, QKeySequence,
         QPalette, QPixmap, qRed)
-from PyQt5.QtWidgets import (QApplication, QColorDialog, QFileDialog, QFrame,
+from PyQt6.QtWidgets import (QApplication, QColorDialog, QFileDialog, QFrame,
         QGridLayout, QLabel, QLayout, QMainWindow, QMenu, QMessageBox,
         QPushButton, QVBoxLayout)
 
@@ -483,4 +483,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Viewer()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

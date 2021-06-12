@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDir, Qt, QUrl
-from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer
-from PyQt5.QtMultimediaWidgets import QVideoWidget
-from PyQt5.QtWidgets import (QApplication, QFileDialog, QHBoxLayout, QLabel,
+from PyQt6.QtCore import QDir, Qt, QUrl
+from PyQt6.QtMultimedia import QMediaContent, QMediaPlayer
+from PyQt6.QtMultimediaWidgets import QVideoWidget
+from PyQt6.QtWidgets import (QApplication, QFileDialog, QHBoxLayout, QLabel,
         QPushButton, QSizePolicy, QSlider, QStyle, QVBoxLayout, QWidget)
 
 
@@ -140,4 +140,4 @@ if __name__ == '__main__':
     player.resize(320, 240)
     player.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

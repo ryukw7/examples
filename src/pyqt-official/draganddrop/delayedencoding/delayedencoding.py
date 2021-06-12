@@ -43,12 +43,12 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (pyqtSignal, QBuffer, QByteArray, QFile, QIODevice,
+from PyQt6.QtCore import (pyqtSignal, QBuffer, QByteArray, QFile, QIODevice,
         QMimeData, Qt)
-from PyQt5.QtGui import QDrag, QIcon, QImage, QPainter, QPixmap
-from PyQt5.QtWidgets import (QApplication, QGridLayout, QLabel, QPushButton,
+from PyQt6.QtGui import QDrag, QIcon, QImage, QPainter, QPixmap
+from PyQt6.QtWidgets import (QApplication, QGridLayout, QLabel, QPushButton,
         QScrollArea, QWidget)
-from PyQt5.QtSvg import QSvgWidget
+from PyQt6.QtSvg import QSvgWidget
 
 import delayedencoding_rc
 
@@ -123,7 +123,7 @@ class SourceWidget(QWidget):
         drag = QDrag(self)
         drag.setMimeData(self.mimeData)
         drag.setPixmap(QPixmap(':/images/drag.png'))
-        drag.exec_(Qt.CopyAction)
+        drag.exec(Qt.CopyAction)
 
 
 if __name__ == '__main__':
@@ -133,4 +133,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = SourceWidget()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

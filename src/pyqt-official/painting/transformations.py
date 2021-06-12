@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QPointF, QSize, Qt
-from PyQt5.QtGui import QBrush, QFont, QFontMetrics, QPainter, QPainterPath
-from PyQt5.QtWidgets import QApplication, QComboBox, QGridLayout, QWidget
+from PyQt6.QtCore import QPointF, QSize, Qt
+from PyQt6.QtGui import QBrush, QFont, QFontMetrics, QPainter, QPainterPath
+from PyQt6.QtWidgets import QApplication, QComboBox, QGridLayout, QWidget
 
 
 NoTransformation, Translate, Rotate, Scale = range(4)
@@ -246,4 +246,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

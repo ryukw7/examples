@@ -42,14 +42,14 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (pyqtSignal, pyqtSlot, Q_ARG, QAbstractItemModel,
+from PyQt6.QtCore import (pyqtSignal, pyqtSlot, Q_ARG, QAbstractItemModel,
         QFileInfo, qFuzzyCompare, QMetaObject, QModelIndex, QObject, Qt,
         QThread, QTime, QUrl)
-from PyQt5.QtGui import QColor, qGray, QImage, QPainter, QPalette
-from PyQt5.QtMultimedia import (QAbstractVideoBuffer, QMediaContent,
+from PyQt6.QtGui import QColor, qGray, QImage, QPainter, QPalette
+from PyQt6.QtMultimedia import (QAbstractVideoBuffer, QMediaContent,
         QMediaMetaData, QMediaPlayer, QMediaPlaylist, QVideoFrame, QVideoProbe)
-from PyQt5.QtMultimediaWidgets import QVideoWidget
-from PyQt5.QtWidgets import (QApplication, QComboBox, QDialog, QFileDialog,
+from PyQt6.QtMultimediaWidgets import QVideoWidget
+from PyQt6.QtWidgets import (QApplication, QComboBox, QDialog, QFileDialog,
         QFormLayout, QHBoxLayout, QLabel, QListView, QMessageBox, QPushButton,
         QSizePolicy, QSlider, QStyle, QToolButton, QVBoxLayout, QWidget)
 
@@ -688,4 +688,4 @@ if __name__ == '__main__':
     player = Player(sys.argv[1:])
     player.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

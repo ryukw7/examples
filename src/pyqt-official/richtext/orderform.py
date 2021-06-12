@@ -42,14 +42,14 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDate, Qt
-from PyQt5.QtGui import (QFont, QTextCharFormat, QTextCursor, QTextFrameFormat,
+from PyQt6.QtCore import QDate, Qt
+from PyQt6.QtGui import (QFont, QTextCharFormat, QTextCursor, QTextFrameFormat,
         QTextLength, QTextTableFormat)
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QDialog,
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, QMainWindow,
         QMessageBox, QMenu, QTableWidget, QTableWidgetItem, QTabWidget,
         QTextEdit)
-from PyQt5.QtPrintSupport import QAbstractPrintDialog, QPrintDialog, QPrinter
+from PyQt6.QtPrintSupport import QAbstractPrintDialog, QPrintDialog, QPrinter
 
 
 class MainWindow(QMainWindow):
@@ -194,7 +194,7 @@ class MainWindow(QMainWindow):
     def openDialog(self):
         dialog = DetailsDialog("Enter Customer Details", self)
 
-        if dialog.exec_() == QDialog.Accepted:
+        if dialog.exec() == QDialog.Accepted:
             self.createLetter(dialog.senderName(), dialog.senderAddress(),
                     dialog.orderItems(), dialog.sendOffers())
 
@@ -208,7 +208,7 @@ class MainWindow(QMainWindow):
         if editor.textCursor().hasSelection():
             dialog.addEnabledOption(QAbstractPrintDialog.PrintSelection)
 
-        if dialog.exec_() != QDialog.Accepted:
+        if dialog.exec() != QDialog.Accepted:
             return
 
         editor.print_(printer)
@@ -300,4 +300,4 @@ if __name__ == '__main__':
     window.resize(640, 480)
     window.show()
     window.createSample()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

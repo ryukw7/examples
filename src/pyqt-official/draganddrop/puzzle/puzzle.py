@@ -44,10 +44,10 @@
 
 import random
 
-from PyQt5.QtCore import (pyqtSignal, QByteArray, QDataStream, QIODevice,
+from PyQt6.QtCore import (pyqtSignal, QByteArray, QDataStream, QIODevice,
         QMimeData, QPoint, QRect, QSize, Qt)
-from PyQt5.QtGui import QDrag, QColor, QCursor, QIcon, QPainter, QPixmap
-from PyQt5.QtWidgets import (QApplication, QFileDialog, QFrame, QHBoxLayout,
+from PyQt6.QtGui import QDrag, QColor, QCursor, QIcon, QPainter, QPixmap
+from PyQt6.QtWidgets import (QApplication, QFileDialog, QFrame, QHBoxLayout,
         QListView, QListWidget, QListWidgetItem, QMainWindow, QMessageBox,
         QSizePolicy, QWidget)
 
@@ -168,7 +168,7 @@ class PuzzleWidget(QWidget):
         drag.setHotSpot(event.pos() - square.topLeft())
         drag.setPixmap(pixmap)
 
-        if drag.exec_(Qt.MoveAction) != Qt.MoveAction:
+        if drag.exec(Qt.MoveAction) != Qt.MoveAction:
             self.pieceLocations.insert(found, location)
             self.piecePixmaps.insert(found, pixmap)
             self.pieceRects.insert(found, square)
@@ -260,7 +260,7 @@ class PiecesList(QListWidget):
         drag.setHotSpot(QPoint(pixmap.width()/2, pixmap.height()/2))
         drag.setPixmap(pixmap)
 
-        if drag.exec_(Qt.MoveAction) == Qt.MoveAction:
+        if drag.exec(Qt.MoveAction) == Qt.MoveAction:
             if self.currentItem() is not None:
                 self.takeItem(self.row(item))
 
@@ -364,4 +364,4 @@ if __name__ == '__main__':
     window = MainWindow()
     window.openImage(':/images/example.jpg')
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

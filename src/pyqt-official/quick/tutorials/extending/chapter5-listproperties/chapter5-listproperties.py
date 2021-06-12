@@ -41,10 +41,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import pyqtProperty, QRectF, QUrl
-from PyQt5.QtGui import QColor, QGuiApplication, QPainter, QPen
-from PyQt5.QtQml import qmlRegisterType, QQmlListProperty
-from PyQt5.QtQuick import QQuickItem, QQuickPaintedItem, QQuickView
+from PyQt6.QtCore import pyqtProperty, QRectF, QUrl
+from PyQt6.QtGui import QColor, QGuiApplication, QPainter, QPen
+from PyQt6.QtQml import qmlRegisterType, QQmlListProperty
+from PyQt6.QtQuick import QQuickItem, QQuickPaintedItem, QQuickView
 
 
 class PieSlice(QQuickPaintedItem):
@@ -126,4 +126,4 @@ if __name__ == '__main__':
                             'app.qml')))
     view.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

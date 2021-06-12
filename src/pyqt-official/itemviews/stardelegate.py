@@ -45,9 +45,9 @@
 
 import math
 
-from PyQt5.QtCore import pyqtSignal, QPointF, QSize, Qt
-from PyQt5.QtGui import QPainter, QPolygonF
-from PyQt5.QtWidgets import (QAbstractItemView, QApplication, QStyle,
+from PyQt6.QtCore import pyqtSignal, QPointF, QSize, Qt
+from PyQt6.QtGui import QPainter, QPolygonF
+from PyQt6.QtWidgets import (QAbstractItemView, QApplication, QStyle,
         QStyledItemDelegate, QTableWidget, QTableWidgetItem, QWidget)
 
 
@@ -249,4 +249,4 @@ if __name__ == '__main__':
     tableWidget.resize(500, 300)
     tableWidget.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

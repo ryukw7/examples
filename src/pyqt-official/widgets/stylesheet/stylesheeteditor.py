@@ -39,8 +39,8 @@
 ###########################################################################
 
 
-from PyQt5.QtCore import pyqtSlot, QFile, QRegExp, Qt, QTextStream
-from PyQt5.QtWidgets import (QApplication, QDialog, QFileDialog, QMessageBox,
+from PyQt6.QtCore import pyqtSlot, QFile, QRegExp, Qt, QTextStream
+from PyQt6.QtWidgets import (QApplication, QDialog, QFileDialog, QMessageBox,
         QStyleFactory)
 
 from ui_stylesheeteditor import Ui_StyleSheetEditor

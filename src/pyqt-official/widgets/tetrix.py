@@ -45,9 +45,9 @@
 import copy
 import random
 
-from PyQt5.QtCore import pyqtSignal, QBasicTimer, QSize, Qt
-from PyQt5.QtGui import QColor, QPainter, QPixmap
-from PyQt5.QtWidgets import (QApplication, QFrame, QGridLayout, QLabel,
+from PyQt6.QtCore import pyqtSignal, QBasicTimer, QSize, Qt
+from PyQt6.QtGui import QColor, QPainter, QPixmap
+from PyQt6.QtWidgets import (QApplication, QFrame, QGridLayout, QLabel,
         QLCDNumber, QPushButton, QWidget)
 
 
@@ -501,4 +501,4 @@ if __name__ == '__main__':
     window = TetrixWindow()
     window.show()
     random.seed(None)
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

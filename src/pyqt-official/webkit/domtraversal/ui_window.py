@@ -3,11 +3,11 @@
 # Form implementation generated from reading ui file 'window.ui'
 #
 # Created: Fri Jul 26 06:50:59 2013
-#      by: PyQt5 UI code generator 5.0.1-snapshot-2a99e59669ee
+#      by: PyQt6 UI code generator 5.0.1-snapshot-2a99e59669ee
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 class Ui_Window(object):
     def setupUi(self, Window):
@@ -54,4 +54,4 @@ class Ui_Window(object):
         Window.setWindowTitle(_translate("Window", "Web Element DOM Traversal"))
         self.dockWidget.setWindowTitle(_translate("Window", "Document Structure"))
 
-from PyQt5 import QtWebKitWidgets
+from PyQt6 import QtWebKitWidgets

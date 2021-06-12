@@ -44,8 +44,8 @@
 
 import array
 
-from PyQt5.QtCore import QEvent
-from PyQt5.QtGui import (QGuiApplication, QMatrix4x4, QOpenGLContext,
+from PyQt6.QtCore import QEvent
+from PyQt6.QtGui import (QGuiApplication, QMatrix4x4, QOpenGLContext,
         QOpenGLShader, QOpenGLShaderProgram, QOpenGLVersionProfile,
         QSurfaceFormat, QWindow)
 
@@ -220,4 +220,4 @@ if __name__ == '__main__':
 
     window.setAnimating(True)
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -37,8 +37,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDate, Qt
-from PyQt5.QtWidgets import QCompleter, QDateTimeEdit, QItemDelegate, QLineEdit
+from PyQt6.QtCore import QDate, Qt
+from PyQt6.QtWidgets import QCompleter, QDateTimeEdit, QItemDelegate, QLineEdit
 
 
 class SpreadSheetDelegate(QItemDelegate):

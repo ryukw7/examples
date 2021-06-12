@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QDoubleValidator, QIntValidator
-from PyQt5.QtWidgets import (QApplication, QComboBox, QGridLayout, QGroupBox,
+from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QDoubleValidator, QIntValidator
+from PyQt6.QtWidgets import (QApplication, QComboBox, QGridLayout, QGroupBox,
         QLabel, QLineEdit, QWidget)
 
 
@@ -204,4 +204,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

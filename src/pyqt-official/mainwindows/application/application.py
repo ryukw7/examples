@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (QFile, QFileInfo, QPoint, QRect, QSettings, QSize,
+from PyQt6.QtCore import (QFile, QFileInfo, QPoint, QRect, QSettings, QSize,
         Qt, QTextStream)
-from PyQt5.QtGui import QIcon, QKeySequence
-from PyQt5.QtWidgets import (QAction, QApplication, QFileDialog, QMainWindow,
+from PyQt6.QtGui import QIcon, QKeySequence
+from PyQt6.QtWidgets import (QAction, QApplication, QFileDialog, QMainWindow,
         QMessageBox, QTextEdit)
 
 
@@ -275,4 +275,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     mainWin = MainWindow()
     mainWin.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

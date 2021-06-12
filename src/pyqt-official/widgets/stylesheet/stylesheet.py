@@ -43,7 +43,7 @@
 ###########################################################################
 
 
-from PyQt5.QtWidgets import QApplication, QLabel, QMainWindow, QMessageBox
+from PyQt6.QtWidgets import QApplication, QLabel, QMainWindow, QMessageBox
 
 import stylesheet_rc
 from ui_mainwindow import Ui_MainWindow
@@ -85,4 +85,4 @@ if __name__ == '__main__':
     window = MainWindow()
     window.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

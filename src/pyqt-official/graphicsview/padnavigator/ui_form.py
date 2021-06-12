@@ -3,11 +3,11 @@
 # Form implementation generated from reading ui file 'form.ui'
 #
 # Created: Sun May  5 07:55:08 2013
-#      by: PyQt5 UI code generator 5.0-snapshot-74eb89bd4fb2
+#      by: PyQt6 UI code generator 5.0-snapshot-74eb89bd4fb2
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 class Ui_Form(object):
     def setupUi(self, Form):

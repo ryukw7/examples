@@ -3,11 +3,11 @@
 # Form implementation generated from reading ui file 'camera.ui'
 #
 # Created: Fri Jun 28 12:10:56 2013
-#      by: PyQt5 UI code generator 5.0-snapshot-478d7f271b71
+#      by: PyQt6 UI code generator 5.0-snapshot-478d7f271b71
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 class Ui_Camera(object):
     def setupUi(self, Camera):
@@ -179,4 +179,4 @@ class Ui_Camera(object):
         self.actionStopCamera.setText(_translate("Camera", "Stop Camera"))
         self.actionSettings.setText(_translate("Camera", "Settings"))
 
-from PyQt5.QtMultimediaWidgets import QCameraViewfinder
+from PyQt6.QtMultimediaWidgets import QCameraViewfinder

@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QApplication, QTableView
-from PyQt5.QtSql import QSqlTableModel
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import QApplication, QTableView
+from PyQt6.QtSql import QSqlTableModel
 
 import connection
 
@@ -86,4 +86,4 @@ if __name__ == '__main__':
     view2.move(view1.x() + view1.width() + 20, view1.y())
     view2.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

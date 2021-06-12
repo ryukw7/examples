@@ -44,8 +44,8 @@
 
 import sys
 
-from PyQt5.QtCore import pyqtSlot, QCoreApplication, QMetaObject, QObject
-from PyQt5.QtDBus import QDBusConnection
+from PyQt6.QtCore import pyqtSlot, QCoreApplication, QMetaObject, QObject
+from PyQt6.QtDBus import QDBusConnection
 
 
 class Pong(QObject):
@@ -74,4 +74,4 @@ if __name__ == '__main__':
     QDBusConnection.sessionBus().registerObject('/', pong,
             QDBusConnection.ExportAllSlots)
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

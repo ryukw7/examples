@@ -46,10 +46,10 @@
 
 import random
 
-from PyQt5.QtCore import QByteArray, QDataStream, QIODevice
-from PyQt5.QtWidgets import (QApplication, QDialog, QLabel, QHBoxLayout,
+from PyQt6.QtCore import QByteArray, QDataStream, QIODevice
+from PyQt6.QtWidgets import (QApplication, QDialog, QLabel, QHBoxLayout,
         QMessageBox, QPushButton, QVBoxLayout)
-from PyQt5.QtNetwork import QLocalServer
+from PyQt6.QtNetwork import QLocalServer
 
 
 class Server(QDialog):
@@ -119,4 +119,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     server = Server()
     server.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

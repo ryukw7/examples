@@ -44,10 +44,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDataStream, QTimer
-from PyQt5.QtWidgets import (QApplication, QDialog, QDialogButtonBox,
+from PyQt6.QtCore import QDataStream, QTimer
+from PyQt6.QtWidgets import (QApplication, QDialog, QDialogButtonBox,
         QGridLayout, QLabel, QLineEdit, QMessageBox, QPushButton)
-from PyQt5.QtNetwork import QLocalSocket
+from PyQt6.QtNetwork import QLocalSocket
 
 
 class Client(QDialog):
@@ -152,4 +152,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     client = Client()
     client.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

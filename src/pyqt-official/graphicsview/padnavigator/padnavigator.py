@@ -44,16 +44,16 @@
 
 import math
 
-from PyQt5.QtCore import (pyqtProperty, QDirIterator, QEasingCurve, QEvent,
+from PyQt6.QtCore import (pyqtProperty, QDirIterator, QEasingCurve, QEvent,
         QEventTransition, QHistoryState, QParallelAnimationGroup, QPointF,
         QPropertyAnimation, QRectF, QSequentialAnimationGroup, QSize, QState,
         QStateMachine, Qt)
-from PyQt5.QtGui import (QBrush, QColor, QFont, QLinearGradient, QPainter,
+from PyQt6.QtGui import (QBrush, QColor, QFont, QLinearGradient, QPainter,
         QPalette, QPen, QPixmap, QTransform)
-from PyQt5.QtWidgets import (QApplication, QGraphicsItem, QGraphicsObject,
+from PyQt6.QtWidgets import (QApplication, QGraphicsItem, QGraphicsObject,
         QGraphicsProxyWidget, QGraphicsRotation, QGraphicsScene, QGraphicsView,
         QKeyEventTransition, QWidget)
-from PyQt5.QtOpenGL import QGL, QGLFormat, QGLWidget
+from PyQt6.QtOpenGL import QGL, QGLFormat, QGLWidget
 
 import padnavigator_rc
 from ui_form import Ui_Form
@@ -395,4 +395,4 @@ if __name__ == '__main__':
     navigator = PadNavigator(QSize(3, 3))
     navigator.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

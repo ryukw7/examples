@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QGridLayout, QGroupBox,
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QGridLayout, QGroupBox,
         QHBoxLayout, QPushButton, QRadioButton, QTextEdit, QVBoxLayout,
         QWidget)
 
@@ -280,4 +280,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     controller = ControllerWindow()
     controller.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

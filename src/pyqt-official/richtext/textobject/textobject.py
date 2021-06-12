@@ -42,11 +42,11 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QFile, QIODevice, QObject, QSizeF
-from PyQt5.QtGui import QTextCharFormat, QTextFormat, QTextObjectInterface
-from PyQt5.QtWidgets import (QApplication, QHBoxLayout, QLabel, QLineEdit,
+from PyQt6.QtCore import QFile, QIODevice, QObject, QSizeF
+from PyQt6.QtGui import QTextCharFormat, QTextFormat, QTextObjectInterface
+from PyQt6.QtWidgets import (QApplication, QHBoxLayout, QLabel, QLineEdit,
         QMessageBox, QPushButton, QTextEdit, QVBoxLayout, QWidget)
-from PyQt5.QtSvg import QSvgRenderer
+from PyQt6.QtSvg import QSvgRenderer
 
 
 class SvgTextObject(QObject, QTextObjectInterface):
@@ -136,4 +136,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

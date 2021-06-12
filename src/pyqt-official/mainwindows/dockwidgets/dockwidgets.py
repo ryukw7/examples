@@ -42,11 +42,11 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDate, QFile, Qt, QTextStream
-from PyQt5.QtGui import (QFont, QIcon, QKeySequence, QTextCharFormat,
+from PyQt6.QtCore import QDate, QFile, Qt, QTextStream
+from PyQt6.QtGui import (QFont, QIcon, QKeySequence, QTextCharFormat,
         QTextCursor, QTextTableFormat)
-from PyQt5.QtPrintSupport import QPrintDialog, QPrinter
-from PyQt5.QtWidgets import (QAction, QApplication, QDialog, QDockWidget,
+from PyQt6.QtPrintSupport import QPrintDialog, QPrinter
+from PyQt6.QtWidgets import (QAction, QApplication, QDialog, QDockWidget,
         QFileDialog, QListWidget, QMainWindow, QMessageBox, QTextEdit)
 
 import dockwidgets_rc
@@ -119,7 +119,7 @@ class MainWindow(QMainWindow):
         printer = QPrinter()
 
         dlg = QPrintDialog(printer, self)
-        if dlg.exec_() != QDialog.Accepted:
+        if dlg.exec() != QDialog.Accepted:
             return
 
         document.print_(printer)
@@ -300,4 +300,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     mainWin = MainWindow()
     mainWin.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

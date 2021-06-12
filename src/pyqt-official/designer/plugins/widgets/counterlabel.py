@@ -23,9 +23,9 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-from PyQt5.QtCore import pyqtProperty, pyqtSignal, pyqtSlot, QRectF, QSize, Qt
-from PyQt5.QtGui import QFont, QFontMetricsF, QPainter
-from PyQt5.QtWidgets import QApplication, QWidget
+from PyQt6.QtCore import pyqtProperty, pyqtSignal, pyqtSlot, QRectF, QSize, Qt
+from PyQt6.QtGui import QFont, QFontMetricsF, QPainter
+from PyQt6.QtWidgets import QApplication, QWidget
 
 
 class CounterLabel(QWidget):
@@ -174,4 +174,4 @@ if __name__ == "__main__":
     widget = CounterLabel()
     widget.setValue(123)
     widget.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

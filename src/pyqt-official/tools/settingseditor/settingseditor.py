@@ -44,10 +44,10 @@
 
 import sys
 
-from PyQt5.QtCore import (QByteArray, QDate, QDateTime, QEvent, QPoint, QRect,
+from PyQt6.QtCore import (QByteArray, QDate, QDateTime, QEvent, QPoint, QRect,
         QRegExp, QSettings, QSize, Qt, QTime, QTimer)
-from PyQt5.QtGui import QColor, QIcon, QRegExpValidator, QValidator
-from PyQt5.QtWidgets import (QAbstractItemView, QAction, QApplication,
+from PyQt6.QtGui import QColor, QIcon, QRegExpValidator, QValidator
+from PyQt6.QtWidgets import (QAbstractItemView, QAction, QApplication,
         QComboBox, QDialog, QDialogButtonBox, QFileDialog, QGridLayout,
         QGroupBox, QHeaderView, QInputDialog, QItemDelegate, QLabel, QLineEdit,
         QMainWindow, QMessageBox, QStyle, QStyleOptionViewItem, QTableWidget,
@@ -76,7 +76,7 @@ class MainWindow(QMainWindow):
         if self.locationDialog is None:
             self.locationDialog = LocationDialog(self)
 
-        if self.locationDialog.exec_():
+        if self.locationDialog.exec():
             settings = QSettings(self.locationDialog.format(),
                                         self.locationDialog.scope(),
                                         self.locationDialog.organization(),
@@ -722,4 +722,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     mainWin = MainWindow()
     mainWin.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

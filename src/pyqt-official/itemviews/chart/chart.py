@@ -44,12 +44,12 @@
 
 import math
 
-from PyQt5.QtCore import (QByteArray, QFile, QItemSelection,
+from PyQt6.QtCore import (QByteArray, QFile, QItemSelection,
         QItemSelectionModel, QModelIndex, QPoint, QRect, QSize, Qt,
         QTextStream)
-from PyQt5.QtGui import (QBrush, QColor, QFontMetrics, QPainter, QPainterPath,
+from PyQt6.QtGui import (QBrush, QColor, QFontMetrics, QPainter, QPainterPath,
         QPalette, QPen, QRegion, QStandardItemModel)
-from PyQt5.QtWidgets import (QAbstractItemView, QApplication, QFileDialog,
+from PyQt6.QtWidgets import (QAbstractItemView, QApplication, QFileDialog,
         QMainWindow, QMenu, QRubberBand, QSplitter, QStyle, QTableView)
 
 import chart_rc
@@ -586,4 +586,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

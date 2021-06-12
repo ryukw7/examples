@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDir, QEvent, Qt, QT_TRANSLATE_NOOP, QTranslator
-from PyQt5.QtGui import QColor, QPalette
-from PyQt5.QtWidgets import (QAction, QApplication, QCheckBox, QDialog,
+from PyQt6.QtCore import QDir, QEvent, Qt, QT_TRANSLATE_NOOP, QTranslator
+from PyQt6.QtGui import QColor, QPalette
+from PyQt6.QtWidgets import (QAction, QApplication, QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QGroupBox, QListWidget, QMainWindow,
         QRadioButton, QVBoxLayout, QWidget)
 
@@ -214,4 +214,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     chooser = LanguageChooser()
     chooser.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

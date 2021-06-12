@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QFileInfo, QSize, Qt
-from PyQt5.QtGui import QMovie, QPalette
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QFileDialog, QGridLayout,
+from PyQt6.QtCore import QFileInfo, QSize, Qt
+from PyQt6.QtGui import QMovie, QPalette
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QFileDialog, QGridLayout,
         QHBoxLayout, QLabel, QSizePolicy, QSlider, QSpinBox, QStyle,
         QToolButton, QVBoxLayout, QWidget)
 
@@ -208,4 +208,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     player = MoviePlayer()
     player.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (QByteArray, QDataStream, QIODevice, QMimeData,
+from PyQt6.QtCore import (QByteArray, QDataStream, QIODevice, QMimeData,
         QPoint, Qt)
-from PyQt5.QtGui import QColor, QDrag, QPainter, QPixmap
-from PyQt5.QtWidgets import QApplication, QFrame, QHBoxLayout, QLabel, QWidget
+from PyQt6.QtGui import QColor, QDrag, QPainter, QPixmap
+from PyQt6.QtWidgets import QApplication, QFrame, QHBoxLayout, QLabel, QWidget
 
 import draggableicons_rc
 
@@ -138,7 +138,7 @@ class DragWidget(QFrame):
 
         child.setPixmap(tempPixmap)
 
-        if drag.exec_(Qt.CopyAction | Qt.MoveAction, Qt.CopyAction) == Qt.MoveAction:
+        if drag.exec(Qt.CopyAction | Qt.MoveAction, Qt.CopyAction) == Qt.MoveAction:
             child.close()
         else:
             child.show()
@@ -160,4 +160,4 @@ if __name__ == '__main__':
     mainWidget.setWindowTitle("Draggable Icons")
     mainWidget.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

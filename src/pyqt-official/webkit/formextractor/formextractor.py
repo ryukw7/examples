@@ -43,9 +43,9 @@
 ###########################################################################
 
 
-from PyQt5.QtCore import pyqtSlot, QUrl
-from PyQt5.QtGui import QKeySequence
-from PyQt5.QtWidgets import (QAction, QApplication, QMainWindow, QMessageBox,
+from PyQt6.QtCore import pyqtSlot, QUrl
+from PyQt6.QtGui import QKeySequence
+from PyQt6.QtWidgets import (QAction, QApplication, QMainWindow, QMessageBox,
         QWidget)
 
 import formextractor_rc
@@ -140,4 +140,4 @@ if __name__ == '__main__':
     mainWindow.setWindowTitle("Form Extractor")
     mainWindow.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

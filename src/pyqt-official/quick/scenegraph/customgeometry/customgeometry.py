@@ -41,10 +41,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import pyqtProperty, pyqtSignal, QPointF, QUrl
-from PyQt5.QtGui import QColor, QGuiApplication
-from PyQt5.QtQml import qmlRegisterType
-from PyQt5.QtQuick import (QQuickItem, QQuickView, QSGFlatColorMaterial,
+from PyQt6.QtCore import pyqtProperty, pyqtSignal, QPointF, QUrl
+from PyQt6.QtGui import QColor, QGuiApplication
+from PyQt6.QtQml import qmlRegisterType
+from PyQt6.QtQuick import (QQuickItem, QQuickView, QSGFlatColorMaterial,
         QSGGeometry, QSGGeometryNode, QSGNode)
 
 import customgeometry_rc
@@ -185,4 +185,4 @@ if __name__ == '__main__':
     view.setSource(QUrl('qrc:///scenegraph/customgeometry/main.qml'))
     view.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

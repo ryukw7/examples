@@ -40,9 +40,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QPointF, QRectF, qRound
-from PyQt5.QtGui import QColor, QPainter, QPixmap, QTransform
-from PyQt5.QtWidgets import QGraphicsObject
+from PyQt6.QtCore import QPointF, QRectF, qRound
+from PyQt6.QtGui import QColor, QPainter, QPixmap, QTransform
+from PyQt6.QtWidgets import QGraphicsObject
 
 from colors import Colors
 

@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QApplication, QTableView
-from PyQt5.QtSql import (QSqlQuery, QSqlRelation, QSqlRelationalDelegate,
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import QApplication, QTableView
+from PyQt6.QtSql import (QSqlQuery, QSqlRelation, QSqlRelationalDelegate,
         QSqlRelationalTableModel, QSqlTableModel)
 
 import connection
@@ -77,20 +77,20 @@ def createView(title, model):
 def createRelationalTables():
     query = QSqlQuery()
 
-    query.exec_("create table employee(id int, name varchar(20), city int, country int)")
-    query.exec_("insert into employee values(1, 'Espen', 5000, 47)")
-    query.exec_("insert into employee values(2, 'Harald', 80000, 49)")
-    query.exec_("insert into employee values(3, 'Sam', 100, 41)")
+    query.exec("create table employee(id int, name varchar(20), city int, country int)")
+    query.exec("insert into employee values(1, 'Espen', 5000, 47)")
+    query.exec("insert into employee values(2, 'Harald', 80000, 49)")
+    query.exec("insert into employee values(3, 'Sam', 100, 41)")
 
-    query.exec_("create table city(id int, name varchar(20))")
-    query.exec_("insert into city values(100, 'San Jose')")
-    query.exec_("insert into city values(5000, 'Oslo')")
-    query.exec_("insert into city values(80000, 'Munich')")
+    query.exec("create table city(id int, name varchar(20))")
+    query.exec("insert into city values(100, 'San Jose')")
+    query.exec("insert into city values(5000, 'Oslo')")
+    query.exec("insert into city values(80000, 'Munich')")
 
-    query.exec_("create table country(id int, name varchar(20))")
-    query.exec_("insert into country values(41, 'USA')")
-    query.exec_("insert into country values(47, 'Norway')")
-    query.exec_("insert into country values(49, 'Germany')")
+    query.exec("create table country(id int, name varchar(20))")
+    query.exec("insert into country values(41, 'USA')")
+    query.exec("insert into country values(47, 'Norway')")
+    query.exec("insert into country values(49, 'Germany')")
 
 
 if __name__ == '__main__':
@@ -111,4 +111,4 @@ if __name__ == '__main__':
 
     view.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

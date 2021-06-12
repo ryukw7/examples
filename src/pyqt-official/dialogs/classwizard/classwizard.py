@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDir, QFile, QRegExp
-from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QGridLayout, QGroupBox,
+from PyQt6.QtCore import QDir, QFile, QRegExp
+from PyQt6.QtGui import QPixmap
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QGridLayout, QGroupBox,
         QLabel, QLineEdit, QMessageBox, QRadioButton, QVBoxLayout, QWizard,
         QWizardPage)
 
@@ -400,4 +400,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     wizard = ClassWizard()
     wizard.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -43,9 +43,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import pyqtSignal, QMimeData, Qt
-from PyQt5.QtGui import QPalette, QPixmap
-from PyQt5.QtWidgets import (QAbstractItemView, QApplication, QDialogButtonBox,
+from PyQt6.QtCore import pyqtSignal, QMimeData, Qt
+from PyQt6.QtGui import QPalette, QPixmap
+from PyQt6.QtWidgets import (QAbstractItemView, QApplication, QDialogButtonBox,
         QFrame, QLabel, QPushButton, QTableWidget, QTableWidgetItem,
         QVBoxLayout, QWidget)
 
@@ -176,5 +176,5 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = DropSiteWindow()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
 

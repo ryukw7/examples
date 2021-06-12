@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDir, Qt, QTimer
-from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QFileDialog, QGridLayout,
+from PyQt6.QtCore import QDir, Qt, QTimer
+from PyQt6.QtGui import QPixmap
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QFileDialog, QGridLayout,
         QGroupBox, QHBoxLayout, QLabel, QPushButton, QSizePolicy, QSpinBox,
         QVBoxLayout, QWidget)
 
@@ -170,4 +170,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     screenshot = Screenshot()
     screenshot.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

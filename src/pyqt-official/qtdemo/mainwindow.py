@@ -40,10 +40,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QFileInfo, QPoint, QRect, qRound, Qt, QTime, QTimer
-from PyQt5.QtGui import (QFontMetricsF, QImage, QPainter, QPixmap, QPolygon,
+from PyQt6.QtCore import QFileInfo, QPoint, QRect, qRound, Qt, QTime, QTimer
+from PyQt6.QtGui import (QFontMetricsF, QImage, QPainter, QPixmap, QPolygon,
         QRegion)
-from PyQt5.QtWidgets import (QApplication, QFrame, QGraphicsScene,
+from PyQt6.QtWidgets import (QApplication, QFrame, QGraphicsScene,
         QGraphicsView, QGraphicsWidget, QMessageBox, QWidget)
 
 from colors import Colors

@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtMultimedia import QAudio, QAudioDeviceInfo, QAudioFormat
-from PyQt5.QtWidgets import QApplication, QTableWidgetItem, QMainWindow
+from PyQt6.QtMultimedia import QAudio, QAudioDeviceInfo, QAudioFormat
+from PyQt6.QtWidgets import QApplication, QTableWidgetItem, QMainWindow
 
 from ui_audiodevicesbase import Ui_AudioDevicesBase
 
@@ -276,4 +276,4 @@ if __name__ == '__main__':
     audio = AudioTest()
     audio.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

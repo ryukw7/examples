@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (QDate, QDateTime, QRegExp, QSortFilterProxyModel, Qt,
+from PyQt6.QtCore import (QDate, QDateTime, QRegExp, QSortFilterProxyModel, Qt,
         QTime)
-from PyQt5.QtGui import QStandardItemModel
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox, QGridLayout,
+from PyQt6.QtGui import QStandardItemModel
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QComboBox, QGridLayout,
         QGroupBox, QHBoxLayout, QLabel, QLineEdit, QTreeView, QVBoxLayout,
         QWidget)
 
@@ -223,4 +223,4 @@ if __name__ == '__main__':
     window = Window()
     window.setSourceModel(createMailModel(window))
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -45,9 +45,9 @@
 import sys
 import math
 
-from PyQt5.QtCore import pyqtSignal, QSize, Qt, QTimer
-from PyQt5.QtGui import QOpenGLVersionProfile, QPixmap
-from PyQt5.QtWidgets import (QAction, QApplication, QGridLayout, QLabel,
+from PyQt6.QtCore import pyqtSignal, QSize, Qt, QTimer
+from PyQt6.QtGui import QOpenGLVersionProfile, QPixmap
+from PyQt6.QtWidgets import (QAction, QApplication, QGridLayout, QLabel,
         QLineEdit, QMainWindow, QMessageBox, QOpenGLWidget, QScrollArea,
         QSizePolicy, QSlider, QWidget)
 
@@ -394,4 +394,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     mainWin = MainWindow()
     mainWin.show()
-    sys.exit(app.exec_())    
+    sys.exit(app.exec())    

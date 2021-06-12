@@ -42,12 +42,12 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDataStream, QSettings, QTimer
-from PyQt5.QtGui import QIntValidator
-from PyQt5.QtWidgets import (QApplication, QComboBox, QDialog,
+from PyQt6.QtCore import QDataStream, QSettings, QTimer
+from PyQt6.QtGui import QIntValidator
+from PyQt6.QtWidgets import (QApplication, QComboBox, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, QMessageBox,
         QPushButton)
-from PyQt5.QtNetwork import (QAbstractSocket, QHostInfo, QNetworkConfiguration,
+from PyQt6.QtNetwork import (QAbstractSocket, QHostInfo, QNetworkConfiguration,
         QNetworkConfigurationManager, QNetworkInterface, QNetworkSession,
         QTcpSocket)
 
@@ -224,4 +224,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     client = Client()
     client.show()
-    sys.exit(client.exec_())
+    sys.exit(client.exec())

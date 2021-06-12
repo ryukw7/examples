@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QFileInfo
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QDialog,
+from PyQt6.QtCore import QFileInfo
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QDialog,
         QDialogButtonBox, QFrame, QGroupBox, QLabel, QLineEdit, QListWidget,
         QTabWidget, QVBoxLayout, QWidget)
 
@@ -202,4 +202,4 @@ if __name__ == '__main__':
 
     tabdialog = TabDialog(fileName)
     tabdialog.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

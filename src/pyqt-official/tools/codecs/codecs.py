@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QFile, QRegExp, QTextCodec, QTextStream
-from PyQt5.QtWidgets import (QAction, QApplication, QComboBox, QDialog,
+from PyQt6.QtCore import QFile, QRegExp, QTextCodec, QTextStream
+from PyQt6.QtWidgets import (QAction, QApplication, QComboBox, QDialog,
         QDialogButtonBox, QFileDialog, QGridLayout, QLabel, QMainWindow, QMenu,
         QMessageBox, QTextEdit)
 
@@ -92,7 +92,7 @@ class MainWindow(QMainWindow):
             data = inFile.readAll()
 
             self.previewForm.setEncodedData(data)
-            if self.previewForm.exec_():
+            if self.previewForm.exec():
                 self.textEdit.setPlainText(self.previewForm.decodedString())
 
     def save(self):
@@ -250,4 +250,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     mainWin = MainWindow()
     mainWin.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

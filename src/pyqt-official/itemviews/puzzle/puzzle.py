@@ -44,11 +44,11 @@
 
 import random
 
-from PyQt5.QtCore import (pyqtSignal, QAbstractListModel, QByteArray,
+from PyQt6.QtCore import (pyqtSignal, QAbstractListModel, QByteArray,
         QDataStream, QIODevice, QMimeData, QModelIndex, QPoint, QRect, QSize,
         Qt)
-from PyQt5.QtGui import QColor, QCursor, QDrag, QIcon, QPainter, QPixmap
-from PyQt5.QtWidgets import (QApplication, QFileDialog, QFrame, QHBoxLayout,
+from PyQt6.QtGui import QColor, QCursor, QDrag, QIcon, QPainter, QPixmap
+from PyQt6.QtWidgets import (QApplication, QFileDialog, QFrame, QHBoxLayout,
         QListView, QMainWindow, QMessageBox, QSizePolicy, QWidget)
 
 import puzzle_rc
@@ -168,7 +168,7 @@ class PuzzleWidget(QWidget):
         drag.setHotSpot(event.pos() - square.topLeft())
         drag.setPixmap(pixmap)
 
-        if drag.exec_(Qt.MoveAction) != Qt.MoveAction:
+        if drag.exec(Qt.MoveAction) != Qt.MoveAction:
             self.pieceLocations.insert(found, location)
             self.piecePixmaps.insert(found, pixmap)
             self.pieceRects.insert(found, square)
@@ -428,4 +428,4 @@ if __name__ == '__main__':
     window = MainWindow()
     window.openImage(':/images/example.jpg')
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -44,10 +44,10 @@
 
 import math
 
-from PyQt5.QtCore import QPointF, Qt, QTimer
-from PyQt5.QtGui import (QBrush, QColor, QLinearGradient, QPen, QPainter,
+from PyQt6.QtCore import QPointF, Qt, QTimer
+from PyQt6.QtGui import (QBrush, QColor, QLinearGradient, QPen, QPainter,
         QPixmap, QRadialGradient)
-from PyQt5.QtWidgets import (QApplication, QFrame, QGraphicsDropShadowEffect,
+from PyQt6.QtWidgets import (QApplication, QFrame, QGraphicsDropShadowEffect,
         QGraphicsEllipseItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView)
 
 
@@ -146,4 +146,4 @@ if __name__ == '__main__':
     lighting.resize(640, 480)
     lighting.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

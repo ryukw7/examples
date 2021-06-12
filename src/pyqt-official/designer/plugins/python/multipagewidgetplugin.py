@@ -1,9 +1,9 @@
 #============================================================================#
-# PyQt5 port of the designer/containerextension example from Qt v4.x         #
+# PyQt6 port of the designer/containerextension example from Qt v4.x         #
 #----------------------------------------------------------------------------#
 import sip
-from PyQt5.QtGui import QIcon
-from PyQt5.QtDesigner import (QDesignerFormWindowInterface, QExtensionFactory,
+from PyQt6.QtGui import QIcon
+from PyQt6.QtDesigner import (QDesignerFormWindowInterface, QExtensionFactory,
         QPyDesignerContainerExtension, QPyDesignerCustomWidgetPlugin,
         QPyDesignerPropertySheetExtension)
 

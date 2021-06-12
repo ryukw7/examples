@@ -51,9 +51,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QFile, QFileInfo, Qt
-from PyQt5.QtGui import QStandardItem, QStandardItemModel
-from PyQt5.QtWidgets import QApplication, QHeaderView, QTableView
+from PyQt6.QtCore import QFile, QFileInfo, Qt
+from PyQt6.QtGui import QStandardItem, QStandardItemModel
+from PyQt6.QtWidgets import QApplication, QHeaderView, QTableView
 
 
 class FreezeTableWidget(QTableView):
@@ -155,7 +155,7 @@ def main(args):
     tableView.setWindowTitle("Frozen Column Example")
     tableView.resize(560, 680)
     tableView.show()
-    return app.exec_()
+    return app.exec()
 
 
 if __name__ == '__main__':

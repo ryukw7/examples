@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QRegExp, Qt
-from PyQt5.QtGui import QPalette
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox, QDialog,
+from PyQt6.QtCore import QRegExp, Qt
+from PyQt6.QtGui import QPalette
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDialog,
         QGridLayout, QHBoxLayout, QLabel, QLineEdit, QSizePolicy)
 
 
@@ -190,4 +190,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     dialog = RegExpDialog()
     dialog.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

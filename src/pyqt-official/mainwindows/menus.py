@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QKeySequence
-from PyQt5.QtWidgets import (QAction, QActionGroup, QApplication, QFrame,
+from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QKeySequence
+from PyQt6.QtWidgets import (QAction, QActionGroup, QApplication, QFrame,
         QLabel, QMainWindow, QMenu, QMessageBox, QSizePolicy, QVBoxLayout,
         QWidget)
 
@@ -89,7 +89,7 @@ class MainWindow(QMainWindow):
         menu.addAction(self.cutAct)
         menu.addAction(self.copyAct)
         menu.addAction(self.pasteAct)
-        menu.exec_(event.globalPos())
+        menu.exec(event.globalPos())
 
     def newFile(self):
         self.infoLabel.setText("Invoked <b>File|New</b>")
@@ -283,4 +283,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

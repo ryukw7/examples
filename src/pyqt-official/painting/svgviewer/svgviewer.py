@@ -42,13 +42,13 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QFile, QSize, Qt
-from PyQt5.QtGui import QBrush, QColor, QImage, QPainter, QPixmap, QPen
-from PyQt5.QtWidgets import (QActionGroup, QApplication, QFileDialog,
+from PyQt6.QtCore import QFile, QSize, Qt
+from PyQt6.QtGui import QBrush, QColor, QImage, QPainter, QPixmap, QPen
+from PyQt6.QtWidgets import (QActionGroup, QApplication, QFileDialog,
         QGraphicsItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView,
         QMainWindow, QMenu, QMessageBox, QWidget)
-from PyQt5.QtOpenGL import QGL, QGLFormat, QGLWidget
-from PyQt5.QtSvg import QGraphicsSvgItem
+from PyQt6.QtOpenGL import QGL, QGLFormat, QGLWidget
+from PyQt6.QtSvg import QGraphicsSvgItem
 
 import svgviewer_rc
 
@@ -295,4 +295,4 @@ if __name__ == '__main__':
     else:
         window.openFile(':/files/bubbles.svg')
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

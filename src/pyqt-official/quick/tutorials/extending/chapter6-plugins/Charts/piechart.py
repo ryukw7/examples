@@ -38,9 +38,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import pyqtProperty
-from PyQt5.QtQml import QQmlListProperty
-from PyQt5.QtQuick import QQuickItem
+from PyQt6.QtCore import pyqtProperty
+from PyQt6.QtQml import QQmlListProperty
+from PyQt6.QtQuick import QQuickItem
 
 from pieslice import PieSlice
 

@@ -45,7 +45,7 @@
 import sys
 import random
 
-from PyQt5.QtCore import QCoreApplication, QMutex, QThread, QWaitCondition
+from PyQt6.QtCore import QCoreApplication, QMutex, QThread, QWaitCondition
 
 
 DataSize = 100000

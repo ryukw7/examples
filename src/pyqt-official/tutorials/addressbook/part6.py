@@ -44,8 +44,8 @@
 
 import pickle
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QDialog, QFileDialog, QGridLayout, QHBoxLayout,
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import (QDialog, QFileDialog, QGridLayout, QHBoxLayout,
         QLabel, QLineEdit, QMessageBox, QPushButton, QTextEdit, QVBoxLayout,
         QWidget)
 
@@ -278,7 +278,7 @@ class AddressBook(QWidget):
     def findContact(self):
         self.dialog.show()
 
-        if self.dialog.exec_() == QDialog.Accepted:
+        if self.dialog.exec() == QDialog.Accepted:
             contactName = self.dialog.getFindText()
 
             if contactName in self.contacts:
@@ -420,11 +420,11 @@ class FindDialog(QDialog):
 if __name__ == '__main__':
     import sys
 
-    from PyQt5.QtWidgets import QApplication
+    from PyQt6.QtWidgets import QApplication
 
     app = QApplication(sys.argv)
 
     addressBook = AddressBook()
     addressBook.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -44,11 +44,11 @@
 
 import math
 
-from PyQt5.QtCore import pyqtSlot, Q_CLASSINFO, QRectF, Qt
-from PyQt5.QtGui import QBrush, QPainter, QTransform
-from PyQt5.QtWidgets import (QApplication, QGraphicsItem, QGraphicsObject,
+from PyQt6.QtCore import pyqtSlot, Q_CLASSINFO, QRectF, Qt
+from PyQt6.QtGui import QBrush, QPainter, QTransform
+from PyQt6.QtWidgets import (QApplication, QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsView)
-from PyQt5.QtDBus import QDBusAbstractAdaptor, QDBusConnection
+from PyQt6.QtDBus import QDBusAbstractAdaptor, QDBusConnection
 
 
 class Car(QGraphicsObject):
@@ -190,7 +190,7 @@ if __name__ == '__main__':
     connection.registerObject('/Car', car)
     connection.registerService('org.example.CarExample')
 
-    rc = app.exec_()
+    rc = app.exec()
 
     # Make sure things get destroyed in the right order.
     del view

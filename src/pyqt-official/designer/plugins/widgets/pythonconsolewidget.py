@@ -23,8 +23,8 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-from PyQt5.QtCore import pyqtSignal, QEvent, Qt
-from PyQt5.QtWidgets import QApplication, QLineEdit
+from PyQt6.QtCore import pyqtSignal, QEvent, Qt
+from PyQt6.QtWidgets import QApplication, QLineEdit
 
 
 class PythonConsoleWidget(QLineEdit):
@@ -95,4 +95,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     widget = PythonConsoleWidget()
     widget.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

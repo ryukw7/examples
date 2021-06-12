@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QColor
-from PyQt5.QtWidgets import QApplication, QTableView
-from PyQt5.QtSql import QSqlQuery, QSqlQueryModel
+from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QColor
+from PyQt6.QtWidgets import QApplication, QTableView
+from PyQt6.QtSql import QSqlQuery, QSqlQueryModel
 
 import connection
 
@@ -102,14 +102,14 @@ class EditableSqlModel(QSqlQueryModel):
         query.prepare('update person set firstname = ? where id = ?')
         query.addBindValue(firstName)
         query.addBindValue(personId)
-        return query.exec_()
+        return query.exec()
 
     def setLastName(self, personId, lastName):
         query = QSqlQuery()
         query.prepare('update person set lastname = ? where id = ?')
         query.addBindValue(lastName)
         query.addBindValue(personId)
-        return query.exec_()
+        return query.exec()
 
 
 def initializeModel(model):
@@ -154,4 +154,4 @@ if __name__ == '__main__':
     createView("Editable Query Model", editableModel)
     createView("Custom Query Model", customModel)
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

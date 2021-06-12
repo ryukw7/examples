@@ -44,11 +44,11 @@
 
 import math
 
-from PyQt5.QtCore import (qAbs, QLineF, QPointF, qrand, QRectF, QSizeF, qsrand,
+from PyQt6.QtCore import (qAbs, QLineF, QPointF, qrand, QRectF, QSizeF, qsrand,
         Qt, QTime)
-from PyQt5.QtGui import (QBrush, QColor, QLinearGradient, QPainter,
+from PyQt6.QtGui import (QBrush, QColor, QLinearGradient, QPainter,
         QPainterPath, QPen, QPolygonF, QRadialGradient)
-from PyQt5.QtWidgets import (QApplication, QGraphicsItem, QGraphicsScene,
+from PyQt6.QtWidgets import (QApplication, QGraphicsItem, QGraphicsScene,
         QGraphicsView, QStyle)
 
 
@@ -427,4 +427,4 @@ if __name__ == '__main__':
     widget = GraphWidget()
     widget.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

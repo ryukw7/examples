@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QFile, QRegExp, Qt
-from PyQt5.QtGui import QFont, QSyntaxHighlighter, QTextCharFormat
-from PyQt5.QtWidgets import (QApplication, QFileDialog, QMainWindow, QMenu,
+from PyQt6.QtCore import QFile, QRegExp, Qt
+from PyQt6.QtGui import QFont, QSyntaxHighlighter, QTextCharFormat
+from PyQt6.QtWidgets import (QApplication, QFileDialog, QMainWindow, QMenu,
         QMessageBox, QTextEdit)
 
 
@@ -201,4 +201,4 @@ if __name__ == '__main__':
     window = MainWindow()
     window.resize(640, 512)
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

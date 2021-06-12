@@ -43,8 +43,8 @@
 #############################################################################
 
 
-from PyQt5.QtGui import QStandardItem, QStandardItemModel
-from PyQt5.QtWidgets import (QApplication, QDataWidgetMapper, QGridLayout,
+from PyQt6.QtGui import QStandardItem, QStandardItemModel
+from PyQt6.QtWidgets import (QApplication, QDataWidgetMapper, QGridLayout,
         QLabel, QLineEdit, QPushButton, QSpinBox, QTextEdit, QWidget)
 
 
@@ -127,4 +127,4 @@ if __name__ == '__main__':
     window = Window()
     window.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

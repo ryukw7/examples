@@ -44,8 +44,8 @@
 
 import sys
 
-from PyQt5.QtCore import pyqtProperty, QCoreApplication, QObject, QUrl
-from PyQt5.QtQml import qmlRegisterType, QQmlComponent, QQmlEngine
+from PyQt6.QtCore import pyqtProperty, QCoreApplication, QObject, QUrl
+from PyQt6.QtQml import qmlRegisterType, QQmlComponent, QQmlEngine
 
 
 QML = b'''

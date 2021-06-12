@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import pyqtSignal, Qt
-from PyQt5.QtWidgets import (QApplication, QBoxLayout, QCheckBox, QComboBox,
+from PyQt6.QtCore import pyqtSignal, Qt
+from PyQt6.QtWidgets import (QApplication, QBoxLayout, QCheckBox, QComboBox,
         QDial, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QScrollBar,
         QSlider, QSpinBox, QStackedWidget, QWidget)
 
@@ -192,4 +192,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Window()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

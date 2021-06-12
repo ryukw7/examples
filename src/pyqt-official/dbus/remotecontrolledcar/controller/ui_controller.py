@@ -3,11 +3,11 @@
 # Form implementation generated from reading ui file 'controller.ui'
 #
 # Created: Fri May 31 18:58:37 2013
-#      by: PyQt5 UI code generator 5.0-snapshot-dd808c1bcced
+#      by: PyQt6 UI code generator 5.0-snapshot-dd808c1bcced
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 class Ui_Controller(object):
     def setupUi(self, Controller):

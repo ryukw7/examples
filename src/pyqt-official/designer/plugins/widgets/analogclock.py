@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import (pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize,
+from PyQt6.QtCore import (pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize,
         Qt, QTime, QTimer)
-from PyQt5.QtGui import QBrush, QColor, QPainter, QPen, QPolygon
-from PyQt5.QtWidgets import QApplication, QWidget
+from PyQt6.QtGui import QBrush, QColor, QPainter, QPen, QPolygon
+from PyQt6.QtWidgets import QApplication, QWidget
 
 
 class PyAnalogClock(QWidget):
@@ -186,4 +186,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     clock = PyAnalogClock()
     clock.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

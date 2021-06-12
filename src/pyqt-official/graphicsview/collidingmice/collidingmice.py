@@ -44,11 +44,11 @@
 
 import math
 
-from PyQt5.QtCore import (qAbs, QLineF, QPointF, QRectF, qrand, qsrand, Qt,
+from PyQt6.QtCore import (qAbs, QLineF, QPointF, QRectF, qrand, qsrand, Qt,
         QTime, QTimer)
-from PyQt5.QtGui import (QBrush, QColor, QPainter, QPainterPath, QPixmap,
+from PyQt6.QtGui import (QBrush, QColor, QPainter, QPainterPath, QPixmap,
         QPolygonF)
-from PyQt5.QtWidgets import (QApplication, QGraphicsItem, QGraphicsScene,
+from PyQt6.QtWidgets import (QApplication, QGraphicsItem, QGraphicsScene,
         QGraphicsView, QGraphicsWidget)
 
 import mice_rc
@@ -218,4 +218,4 @@ if __name__ == '__main__':
     view.resize(400, 300)
     view.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

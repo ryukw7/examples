@@ -42,9 +42,9 @@
 #############################################################################
 
 
-from PyQt5.QtWidgets import (QApplication, QDialog, QHBoxLayout, QLabel,
+from PyQt6.QtWidgets import (QApplication, QDialog, QHBoxLayout, QLabel,
         QPushButton, QVBoxLayout)
-from PyQt5.QtNetwork import QUdpSocket
+from PyQt6.QtNetwork import QUdpSocket
 
 
 class Receiver(QDialog):
@@ -93,4 +93,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     receiver = Receiver()
     receiver.show()
-    sys.exit(receiver.exec_())
+    sys.exit(receiver.exec())

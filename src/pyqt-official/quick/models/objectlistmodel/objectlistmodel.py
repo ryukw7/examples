@@ -41,9 +41,9 @@
 #############################################################################
 
 
-from PyQt5.QtCore import pyqtProperty, pyqtSignal, QObject, QUrl
-from PyQt5.QtGui import QGuiApplication
-from PyQt5.QtQuick import QQuickView
+from PyQt6.QtCore import pyqtProperty, pyqtSignal, QObject, QUrl
+from PyQt6.QtGui import QGuiApplication
+from PyQt6.QtQuick import QQuickView
 
 import objectlistmodel_rc
 
@@ -105,4 +105,4 @@ if __name__ == '__main__':
     view.setSource(QUrl('qrc:view.qml'))
     view.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

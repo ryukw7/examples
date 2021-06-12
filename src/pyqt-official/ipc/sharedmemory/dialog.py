@@ -3,11 +3,11 @@
 # Form implementation generated from reading ui file 'dialog.ui'
 #
 # Created: Sun May 12 11:56:49 2013
-#      by: PyQt5 UI code generator 5.0-snapshot-b0831183bf83
+#      by: PyQt6 UI code generator 5.0-snapshot-b0831183bf83
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):

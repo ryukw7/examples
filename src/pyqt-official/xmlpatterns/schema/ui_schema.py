@@ -3,11 +3,11 @@
 # Form implementation generated from reading ui file 'schema.ui'
 #
 # Created: Wed May 15 14:30:19 2013
-#      by: PyQt5 UI code generator 5.0-snapshot-3507ed3a4178
+#      by: PyQt6 UI code generator 5.0-snapshot-3507ed3a4178
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 class Ui_SchemaMainWindow(object):
     def setupUi(self, SchemaMainWindow):

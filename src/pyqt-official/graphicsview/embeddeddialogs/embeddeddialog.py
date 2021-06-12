@@ -3,11 +3,11 @@
 # Form implementation generated from reading ui file 'embeddeddialog.ui'
 #
 # Created: Wed May 15 16:13:29 2013
-#      by: PyQt5 UI code generator 5.0-snapshot-8d430da208a7
+#      by: PyQt6 UI code generator 5.0-snapshot-8d430da208a7
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 class Ui_embeddedDialog(object):
     def setupUi(self, embeddedDialog):

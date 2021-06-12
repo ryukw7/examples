@@ -42,8 +42,8 @@
 
 import sys
 
-from PyQt5.QtGui import QColor, QFont
-from PyQt5.QtWidgets import QMessageBox, QWidget
+from PyQt6.QtGui import QColor, QFont
+from PyQt6.QtWidgets import QMessageBox, QWidget
 
 
 class Colors(object):

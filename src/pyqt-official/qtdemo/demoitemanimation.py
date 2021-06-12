@@ -40,7 +40,7 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QPropertyAnimation, QTimer
+from PyQt6.QtCore import QPropertyAnimation, QTimer
 
 from colors import Colors
 

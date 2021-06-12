@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QByteArray, Qt
-from PyQt5.QtWidgets import (QApplication, QDialog, QDialogButtonBox, QLabel,
+from PyQt6.QtCore import QByteArray, Qt
+from PyQt6.QtWidgets import (QApplication, QDialog, QDialogButtonBox, QLabel,
         QMessageBox, QProgressBar, QPushButton, QVBoxLayout)
-from PyQt5.QtNetwork import QHostAddress, QTcpServer, QTcpSocket
+from PyQt6.QtNetwork import QHostAddress, QTcpServer, QTcpSocket
 
 
 class Dialog(QDialog):
@@ -171,4 +171,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     dialog = Dialog()
     dialog.show()
-    sys.exit(dialog.exec_())
+    sys.exit(dialog.exec())

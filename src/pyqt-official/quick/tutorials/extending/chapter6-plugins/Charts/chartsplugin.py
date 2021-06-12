@@ -38,7 +38,7 @@
 #############################################################################
 
 
-from PyQt5.QtQml import qmlRegisterType, QQmlExtensionPlugin
+from PyQt6.QtQml import qmlRegisterType, QQmlExtensionPlugin
 
 from piechart import PieChart
 from pieslice import PieSlice

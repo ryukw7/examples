@@ -42,10 +42,10 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QTimer
-from PyQt5.QtWidgets import (QApplication, QDialog, QDialogButtonBox, QLabel,
+from PyQt6.QtCore import QTimer
+from PyQt6.QtWidgets import (QApplication, QDialog, QDialogButtonBox, QLabel,
         QPushButton, QVBoxLayout)
-from PyQt5.QtNetwork import QHostAddress, QUdpSocket
+from PyQt6.QtNetwork import QHostAddress, QUdpSocket
 
 
 class Sender(QDialog):
@@ -94,4 +94,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     sender = Sender()
     sender.show()
-    sys.exit(sender.exec_())
+    sys.exit(sender.exec())

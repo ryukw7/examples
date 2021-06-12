@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QDialog,
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QHBoxLayout, QLabel, QLayout, QLineEdit,
         QPushButton, QVBoxLayout, QWidget)
 
@@ -114,4 +114,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     dialog = FindDialog()
     dialog.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

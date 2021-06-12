@@ -42,11 +42,11 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDir, Qt
-from PyQt5.QtGui import QImage, QPainter, QPalette, QPixmap
-from PyQt5.QtWidgets import (QAction, QApplication, QFileDialog, QLabel,
+from PyQt6.QtCore import QDir, Qt
+from PyQt6.QtGui import QImage, QPainter, QPalette, QPixmap
+from PyQt6.QtWidgets import (QAction, QApplication, QFileDialog, QLabel,
         QMainWindow, QMenu, QMessageBox, QScrollArea, QSizePolicy)
-from PyQt5.QtPrintSupport import QPrintDialog, QPrinter
+from PyQt6.QtPrintSupport import QPrintDialog, QPrinter
 
 
 class ImageViewer(QMainWindow):
@@ -94,7 +94,7 @@ class ImageViewer(QMainWindow):
 
     def print_(self):
         dialog = QPrintDialog(self.printer, self)
-        if dialog.exec_():
+        if dialog.exec():
             painter = QPainter(self.printer)
             rect = painter.viewport()
             size = self.imageLabel.pixmap().size()
@@ -213,4 +213,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     imageViewer = ImageViewer()
     imageViewer.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

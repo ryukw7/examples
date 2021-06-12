@@ -43,7 +43,7 @@
 import math
 import random
 
-from PyQt5.QtCore import QLineF, QPointF, QRectF, Qt, QTime
+from PyQt6.QtCore import QLineF, QPointF, QRectF, Qt, QTime
 
 from colors import Colors
 from demoitem import DemoItem
